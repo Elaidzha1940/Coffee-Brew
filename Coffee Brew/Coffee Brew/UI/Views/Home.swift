@@ -13,11 +13,15 @@ struct Home: View {
     var body: some View {
         
         VStack {
-            
-            
-            Image("system-bigcoffee")
+            ZStack {
+                
+                Color(toElement: .main)
+                
+                Image("system-bigcoffee")
+                
+            }
         }
-        .background(Color(toElement: .main))
+        .ignoresSafeArea()
     }
 }
 
