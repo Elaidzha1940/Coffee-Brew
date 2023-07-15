@@ -96,8 +96,8 @@
 		E4941FB02A63105F00AAA6A4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E4941FB72A6310C700AAA6A4 /* Colors.xcassets */,
-				E4941FB92A6310D200AAA6A4 /* Images.xcassets */,
+				E4941FC22A63119200AAA6A4 /* Assets */,
+				E4941FC32A63119F00AAA6A4 /* Fonts */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -109,6 +109,22 @@
 				E4941FC02A63113E00AAA6A4 /* ColorAsset.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E4941FC22A63119200AAA6A4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E4941FB92A6310D200AAA6A4 /* Images.xcassets */,
+				E4941FB72A6310C700AAA6A4 /* Colors.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E4941FC32A63119F00AAA6A4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

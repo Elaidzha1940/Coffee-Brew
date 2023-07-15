@@ -1,9 +1,13 @@
+//  /*
 //
-//  ColorAsset.swift
-//  Coffee Brew
+//  Project: Coffee Brew
+//  File: ColorAsset.swift
+//  Created by: Elaidzha Shchukin
+//  Date: 15.07.2023
 //
-//  Created by Elaidzha Shchukin on 15.07.2023.
+//  S
 //
+//  */
 
 protocol AssetColor: RawRepresentable {}
 

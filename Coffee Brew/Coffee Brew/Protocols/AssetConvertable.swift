@@ -1,9 +1,13 @@
+//  /*
 //
-//  AssetConvertable.swift
-//  Coffee Brew
+//  Project: Coffee Brew
+//  File: AssetConvertable.swift
+//  Created by: Elaidzha Shchukin
+//  Date: 15.07.2023
 //
-//  Created by Elaidzha Shchukin on 15.07.2023.
+//  S
 //
+//  */ 
 
 import Foundation
 
