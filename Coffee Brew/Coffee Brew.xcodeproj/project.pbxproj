@@ -69,6 +69,7 @@
 				E4941FBB2A6310EE00AAA6A4 /* Protocols */,
 				E4941FAB2A630FB000AAA6A4 /* Extensions */,
 				E4941FB02A63105F00AAA6A4 /* Resources */,
+				E4941FC42A63145000AAA6A4 /* UI */,
 				E4941FA02A630BC800AAA6A4 /* Assets.xcassets */,
 				E4941FA22A630BC800AAA6A4 /* Coffee_Brew.entitlements */,
 				E4941FA32A630BC800AAA6A4 /* Preview Content */,
@@ -125,6 +126,13 @@
 			children = (
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E4941FC42A63145000AAA6A4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

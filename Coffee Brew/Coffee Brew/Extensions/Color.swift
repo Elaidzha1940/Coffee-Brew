@@ -5,7 +5,7 @@
 //  Created by: Elaidzha Shchukin
 //  Date: 15.07.2023
 //
-//  S
+//  Status: #In progress | #Decorated
 //
 //  */
 
@@ -17,7 +17,7 @@ internal extension Color {
     //MARK: Element
     //=============================================
     enum Element: String, AssetColor {
-        case mainblue, maingrey, mainwhite, buttoncolor, mainblack, greycom
+        case main
     }
     init(toElement option: Self.Element){
         self.init(option.colorName)
@@ -26,7 +26,7 @@ internal extension Color {
     //MARK: Text
     //=============================================
     enum Text: String, AssetColor {
-        case main, mainblack, mainblue, blacktext, greytext, textfieldgrey, bluecom
+        case main
     }
     init(toText option: Self.Text){
         self.init(option.colorName)

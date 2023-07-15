@@ -5,7 +5,7 @@
 //  Created by: Elaidzha Shchukin
 //  Date: 15.07.2023
 //
-//  S
+//  Status: #In progress | #Decorated
 //
 //  */
 
@@ -16,15 +16,15 @@ enum Resources {}
 extension Resources {
     
     enum System: String, AssetConvertable {
-        case burger, calendar, logo, photo, search, scrap, right, star, point, starw, smallcalendar, micro, mountain
+        case bigcoffee
         
     }
     
     enum Icon: String, AssetConvertable {
-        case cube, ellipce, polygon, whiteplus, iletter, iletterblue
+        case main
     }
     
     enum Categories: String, AssetConvertable {
-        case later
+        case main
     }
 }
