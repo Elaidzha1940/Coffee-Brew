@@ -15,6 +15,8 @@
 		E4941FAF2A63100900AAA6A4 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4941FAE2A63100900AAA6A4 /* Color.swift */; };
 		E4941FB82A6310C700AAA6A4 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4941FB72A6310C700AAA6A4 /* Colors.xcassets */; };
 		E4941FBA2A6310D200AAA6A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4941FB92A6310D200AAA6A4 /* Images.xcassets */; };
+		E4941FBD2A63112100AAA6A4 /* AssetConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4941FBC2A63112100AAA6A4 /* AssetConvertable.swift */; };
+		E4941FC12A63113E00AAA6A4 /* ColorAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4941FC02A63113E00AAA6A4 /* ColorAsset.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		E4941FAE2A63100900AAA6A4 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		E4941FB72A6310C700AAA6A4 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		E4941FB92A6310D200AAA6A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E4941FBC2A63112100AAA6A4 /* AssetConvertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetConvertable.swift; sourceTree = "<group>"; };
+		E4941FC02A63113E00AAA6A4 /* ColorAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAsset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 		E4941FBB2A6310EE00AAA6A4 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				E4941FBC2A63112100AAA6A4 /* AssetConvertable.swift */,
+				E4941FC02A63113E00AAA6A4 /* ColorAsset.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -179,7 +185,9 @@
 			files = (
 				E4941FAD2A630FCB00AAA6A4 /* Resources.swift in Sources */,
 				E4941FAF2A63100900AAA6A4 /* Color.swift in Sources */,
+				E4941FBD2A63112100AAA6A4 /* AssetConvertable.swift in Sources */,
 				E4941F9F2A630BC700AAA6A4 /* ContentView.swift in Sources */,
+				E4941FC12A63113E00AAA6A4 /* ColorAsset.swift in Sources */,
 				E4941F9D2A630BC700AAA6A4 /* Coffee_BrewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
