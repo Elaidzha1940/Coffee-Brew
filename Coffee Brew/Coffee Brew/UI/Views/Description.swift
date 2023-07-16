@@ -45,11 +45,40 @@ struct Description: View {
                         Text("...Read More")
                             .foregroundColor(.white)
                         
-                        HStack {
+                        VStack(alignment: .leading) {
                             Text("Choice of milk")
                                 .foregroundColor(.white)
                             
+                            HStack {
+                                OatMilkCm()
+                                SoyMilkCm()
+                                AlmondMilkCm()
+                            }
                         }
+                        .padding()
+                        
+                        HStack(spacing: 50) {
+                            VStack {
+                                Text("Price")
+                                    .foregroundColor(.white)
+                                
+                                Text("R 249")
+                                    .foregroundColor(.white)
+                            }
+                            .padding(.horizontal, 20)
+                            Button {
+                                //action
+                            } label: {
+                                Text("Oat Milk")
+                                    .frame(width: 250, height: 50)
+                                    .foregroundColor(Color(toText: .main))
+                                    .background(Color(toElement: .mainbright))
+                            }
+                            .cornerRadius(10)
+                            .padding(.leading, 20)
+
+                        }
+                        .padding(.horizontal)
                     }
                 }
             }

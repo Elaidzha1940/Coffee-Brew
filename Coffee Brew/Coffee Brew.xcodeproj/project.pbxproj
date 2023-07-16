@@ -22,7 +22,7 @@
 		E4941FCC2A63153800AAA6A4 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4941FCB2A63153800AAA6A4 /* Description.swift */; };
 		E4941FCE2A641C3C00AAA6A4 /* OatMilkCm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4941FCD2A641C3C00AAA6A4 /* OatMilkCm.swift */; };
 		E4941FD02A64337B00AAA6A4 /* SoyMilkCm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4941FCF2A64337B00AAA6A4 /* SoyMilkCm.swift */; };
-		E4941FD22A6433C900AAA6A4 /* Almond Milk.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4941FD12A6433C900AAA6A4 /* Almond Milk.swift */; };
+		E4941FD22A6433C900AAA6A4 /* AlmondMilkCm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4941FD12A6433C900AAA6A4 /* AlmondMilkCm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +43,7 @@
 		E4941FCB2A63153800AAA6A4 /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
 		E4941FCD2A641C3C00AAA6A4 /* OatMilkCm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OatMilkCm.swift; sourceTree = "<group>"; };
 		E4941FCF2A64337B00AAA6A4 /* SoyMilkCm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyMilkCm.swift; sourceTree = "<group>"; };
-		E4941FD12A6433C900AAA6A4 /* Almond Milk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Almond Milk.swift"; sourceTree = "<group>"; };
+		E4941FD12A6433C900AAA6A4 /* AlmondMilkCm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlmondMilkCm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,11 +162,19 @@
 		E4941FC62A6314B200AAA6A4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				E4941FCD2A641C3C00AAA6A4 /* OatMilkCm.swift */,
-				E4941FCF2A64337B00AAA6A4 /* SoyMilkCm.swift */,
-				E4941FD12A6433C900AAA6A4 /* Almond Milk.swift */,
+				E4941FD32A64345400AAA6A4 /* Typeofmilk */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		E4941FD32A64345400AAA6A4 /* Typeofmilk */ = {
+			isa = PBXGroup;
+			children = (
+				E4941FCD2A641C3C00AAA6A4 /* OatMilkCm.swift */,
+				E4941FCF2A64337B00AAA6A4 /* SoyMilkCm.swift */,
+				E4941FD12A6433C900AAA6A4 /* AlmondMilkCm.swift */,
+			);
+			path = Typeofmilk;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,7 +253,7 @@
 				E4941FAD2A630FCB00AAA6A4 /* Resources.swift in Sources */,
 				E4941FAF2A63100900AAA6A4 /* Color.swift in Sources */,
 				E4941FBD2A63112100AAA6A4 /* AssetConvertable.swift in Sources */,
-				E4941FD22A6433C900AAA6A4 /* Almond Milk.swift in Sources */,
+				E4941FD22A6433C900AAA6A4 /* AlmondMilkCm.swift in Sources */,
 				E4941F9F2A630BC700AAA6A4 /* ContentView.swift in Sources */,
 				E4941FC12A63113E00AAA6A4 /* ColorAsset.swift in Sources */,
 				E4941F9D2A630BC700AAA6A4 /* Coffee_BrewApp.swift in Sources */,
