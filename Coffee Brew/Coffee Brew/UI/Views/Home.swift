@@ -12,16 +12,7 @@ import SwiftUI
 struct Home: View {
     var body: some View {
         
-        VStack {
-            ZStack {
-                
-                Color(toElement: .main)
-                
-                Image("system-bigcoffee")
-                
-            }
-        }
-        .ignoresSafeArea()
+        Text("hi")
     }
 }
 
