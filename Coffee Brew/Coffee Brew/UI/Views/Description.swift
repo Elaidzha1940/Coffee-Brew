@@ -11,7 +11,7 @@ import SwiftUI
 
 struct Description: View {
     var body: some View {
-       
+        
         VStack {
             ZStack {
                 Color(toElement: .main)
@@ -48,7 +48,7 @@ struct Description: View {
                         HStack {
                             Text("Choice of milk")
                                 .foregroundColor(.white)
-
+                            
                         }
                     }
                 }
