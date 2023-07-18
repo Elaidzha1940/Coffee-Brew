@@ -28,7 +28,7 @@ struct Description: View {
                     VStack(alignment: .leading, spacing: 5) {
                         HStack {
                             Text("Cappuccino")
-                                .font(.custom(Fonts.Rosarivo.regular, size: 25))
+                                .font(.custom(Fonts.Rosarivo.italic, size: 25))
                                 .foregroundColor(.white)
                             
                             Spacer()
@@ -39,20 +39,30 @@ struct Description: View {
                         HStack {
                             
                             Text("Drizzled with Caramel")
+                                .font(.custom(Fonts.Rosarivo.italic, size: 18))
                                 .foregroundColor(.white)
-                                .padding(.horizontal, 20)
+                                .padding(.horizontal)
                             
                             Image("system-star")
-                                .padding(.horizontal, 20)
+                            
+                            Text("4-5")
+                                .font(.custom(Fonts.Rosarivo.italic, size: 16))
+                                .foregroundColor(.white)
+
                         }
                         
                         Text("A single espresso shot poured into hot foamy milk, with surface topped with mildly sweetened cocoa powder and drizzled with scrumptious caramel syrup")
+                            .font(.custom(Fonts.Rosarivo.regular, size: 16))
+                            .multilineTextAlignment(.leading)
                             .foregroundColor(.white)
+                            .padding()
+                        
                         Text("...Read More")
                             .foregroundColor(.white)
                         
                         VStack(alignment: .leading) {
                             Text("Choice of milk")
+                                .font(.custom(Fonts.Rosarivo.regular, size: 18))
                                 .foregroundColor(.white)
                             
                             HStack {
