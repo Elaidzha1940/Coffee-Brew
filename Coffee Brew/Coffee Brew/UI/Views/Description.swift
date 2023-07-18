@@ -62,13 +62,15 @@ struct Description: View {
                                     ZStack {
                                         if selected == category {
                                             RoundedRectangle(cornerRadius: 12)
-                                                .fill(Color.brown)
+                                                .fill(Color(toElement: .mainbright))
                                                 .matchedGeometryEffect(id: "category_background", in: namespacee)
                                             
                                         }
                                         Text(category)
+                                            .border(.background)
+                                            .frame(width: 140, height: 40)
                                             .bold()
-                                            .foregroundColor(selected == category ? .white : .brown)
+                                            .foregroundColor(selected == category ? .brown : Color(toElement: .mainbright))
                                     }
                                     .frame(maxWidth: .infinity)
                                     .frame(height: 50)
@@ -79,12 +81,10 @@ struct Description: View {
                                     }
                                 }
                             }
-                            .padding()
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
-                            .background(Color.black.opacity(0.4))
                             
                         }
-                      // .padding()
+                      .padding()
                         
                         HStack(spacing: 50) {
                             VStack {
