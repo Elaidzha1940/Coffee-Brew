@@ -11,7 +11,7 @@ import SwiftUI
 
 struct Description: View {
     
-    let categories: [String] = ["OatMilk", "SoyMilk", "AlmondMilk"]
+    let categories: [String] = ["Oat Milk", "Soy Milk", "Almond Milk"]
     @State private var selected: String = ""
     @Namespace private var namespacee
     
@@ -28,6 +28,7 @@ struct Description: View {
                     VStack(alignment: .leading, spacing: 5) {
                         HStack {
                             Text("Cappuccino")
+                                .font(.custom(Fonts.Rosarivo.regular, size: 25))
                                 .foregroundColor(.white)
                             
                             Spacer()
@@ -54,8 +55,6 @@ struct Description: View {
                             Text("Choice of milk")
                                 .foregroundColor(.white)
                             
-                            //
-                            
                             HStack {
                                 ForEach(categories, id: \.self) { category in
                                     
@@ -67,13 +66,17 @@ struct Description: View {
                                             
                                         }
                                         Text(category)
-                                            .border(.background)
-                                            .frame(width: 140, height: 40)
+                                            .frame(maxWidth: .infinity)
+                                            .frame(height: 45)
+                                            .background(
+                                                RoundedRectangle(cornerRadius: 12)
+                                                    .stroke()
+                                            )
                                             .bold()
                                             .foregroundColor(selected == category ? .brown : Color(toElement: .mainbright))
                                     }
                                     .frame(maxWidth: .infinity)
-                                    .frame(height: 50)
+                                    .frame(height: 45)
                                     .onTapGesture {
                                         withAnimation(.spring()) {
                                             selected = category
@@ -84,7 +87,7 @@ struct Description: View {
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
                             
                         }
-                      .padding()
+                        .padding()
                         
                         HStack(spacing: 50) {
                             VStack {
@@ -107,7 +110,6 @@ struct Description: View {
                             .padding(.leading, 20)
                             
                         }
-                        .padding(.horizontal)
                     }
                 }
             }

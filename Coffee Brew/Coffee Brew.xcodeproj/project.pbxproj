@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E40710482A66D4CA007CC9F5 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40710472A66D4CA007CC9F5 /* Fonts.swift */; };
+		E407104A2A66D51B007CC9F5 /* Rosarivo in Resources */ = {isa = PBXBuildFile; fileRef = E40710492A66D51B007CC9F5 /* Rosarivo */; };
 		E4941F9D2A630BC700AAA6A4 /* Coffee_BrewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4941F9C2A630BC700AAA6A4 /* Coffee_BrewApp.swift */; };
 		E4941F9F2A630BC700AAA6A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4941F9E2A630BC700AAA6A4 /* ContentView.swift */; };
 		E4941FA12A630BC800AAA6A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4941FA02A630BC800AAA6A4 /* Assets.xcassets */; };
@@ -26,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E40710472A66D4CA007CC9F5 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		E40710492A66D51B007CC9F5 /* Rosarivo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Rosarivo; sourceTree = "<group>"; };
+		E407104B2A66D68A007CC9F5 /* Coffee-Brew-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Coffee-Brew-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E4941F992A630BC700AAA6A4 /* Coffee Brew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee Brew.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4941F9C2A630BC700AAA6A4 /* Coffee_BrewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee_BrewApp.swift; sourceTree = "<group>"; };
 		E4941F9E2A630BC700AAA6A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +81,7 @@
 		E4941F9B2A630BC700AAA6A4 /* Coffee Brew */ = {
 			isa = PBXGroup;
 			children = (
+				E407104B2A66D68A007CC9F5 /* Coffee-Brew-Info.plist */,
 				E4941F9C2A630BC700AAA6A4 /* Coffee_BrewApp.swift */,
 				E4941F9E2A630BC700AAA6A4 /* ContentView.swift */,
 				E4941FBB2A6310EE00AAA6A4 /* Protocols */,
@@ -136,6 +142,8 @@
 		E4941FC32A63119F00AAA6A4 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				E40710492A66D51B007CC9F5 /* Rosarivo */,
+				E40710472A66D4CA007CC9F5 /* Fonts.swift */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -237,6 +245,7 @@
 			files = (
 				E4941FB82A6310C700AAA6A4 /* Colors.xcassets in Resources */,
 				E4941FBA2A6310D200AAA6A4 /* Images.xcassets in Resources */,
+				E407104A2A66D51B007CC9F5 /* Rosarivo in Resources */,
 				E4941FA52A630BC800AAA6A4 /* Preview Assets.xcassets in Resources */,
 				E4941FA12A630BC800AAA6A4 /* Assets.xcassets in Resources */,
 			);
@@ -251,6 +260,7 @@
 			files = (
 				E4941FCE2A641C3C00AAA6A4 /* OatMilkCm.swift in Sources */,
 				E4941FAD2A630FCB00AAA6A4 /* Resources.swift in Sources */,
+				E40710482A66D4CA007CC9F5 /* Fonts.swift in Sources */,
 				E4941FAF2A63100900AAA6A4 /* Color.swift in Sources */,
 				E4941FBD2A63112100AAA6A4 /* AssetConvertable.swift in Sources */,
 				E4941FD22A6433C900AAA6A4 /* AlmondMilkCm.swift in Sources */,
@@ -389,6 +399,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Coffee-Brew-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -398,7 +410,6 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -427,6 +438,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Coffee-Brew-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -436,7 +449,6 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
