@@ -20,26 +20,33 @@ struct Description: View {
         VStack {
             ZStack {
                 Color(toElement: .main)
+                
                 VStack {
                     Image("system-bigcoffee")
                         .resizable()
                         .scaledToFit()
+                        //.scaledToFill()
                     
                     VStack(alignment: .leading, spacing: 5) {
                         HStack {
                             Text("Cappuccino")
-                                .font(.custom(Fonts.Rosarivo.italic, size: 25))
+                                .font(.custom(Fonts.Rosarivo.italic, size: 30))
                                 .foregroundColor(.white)
                             
                             Spacer()
-                            Image("system-heart")
+                            
+                            Button {
+                                //action
+                            } label: {
+                                Image("system-heart")
+                            }
                         }
+                        //.padding(.horizontal)
                         .padding()
                         
                         HStack {
-                            
                             Text("Drizzled with Caramel")
-                                .font(.custom(Fonts.Rosarivo.italic, size: 18))
+                                .font(.custom(Fonts.Rosarivo.italic, size: 20))
                                 .foregroundColor(.white)
                                 .padding(.horizontal)
                             
@@ -48,11 +55,10 @@ struct Description: View {
                             Text("4-5")
                                 .font(.custom(Fonts.Rosarivo.italic, size: 16))
                                 .foregroundColor(.white)
-
                         }
                         
                         Text("A single espresso shot poured into hot foamy milk, with surface topped with mildly sweetened cocoa powder and drizzled with scrumptious caramel syrup")
-                            .font(.custom(Fonts.Rosarivo.regular, size: 16))
+                            .font(.custom(Fonts.Rosarivo.regular, size: 20))
                             .multilineTextAlignment(.leading)
                             .foregroundColor(.white)
                             .padding()
@@ -60,11 +66,12 @@ struct Description: View {
                         Text("...Read More")
                             .foregroundColor(.white)
                         
-                        VStack(alignment: .leading) {
                             Text("Choice of milk")
-                                .font(.custom(Fonts.Rosarivo.regular, size: 18))
+                                .font(.custom(Fonts.Rosarivo.regular, size: 20))
                                 .foregroundColor(.white)
+                                .padding(.horizontal)
                             
+                        VStack {
                             HStack {
                                 ForEach(categories, id: \.self) { category in
                                     
@@ -98,27 +105,29 @@ struct Description: View {
                             
                         }
                         .padding()
+                        .padding(.bottom, 20)
                         
-                        HStack(spacing: 50) {
+                        HStack {
                             VStack {
                                 Text("Price")
+                                    .font(.custom(Fonts.Rosarivo.regular, size: 20))
                                     .foregroundColor(.white)
                                 
                                 Text("R 249")
+                                    .font(.custom(Fonts.Rosarivo.regular, size: 20))
                                     .foregroundColor(.white)
                             }
-                            .padding(.horizontal, 20)
+                            .padding(.horizontal, 22)
                             Button {
                                 //action
                             } label: {
                                 Text("Oat Milk")
-                                    .frame(width: 250, height: 50)
+                                    .frame(width: 290, height: 50)
                                     .foregroundColor(Color(toText: .main))
                                     .background(Color(toElement: .mainbright))
                             }
                             .cornerRadius(10)
-                            .padding(.leading, 20)
-                            
+                            .padding(.leading, 25)
                         }
                     }
                 }
