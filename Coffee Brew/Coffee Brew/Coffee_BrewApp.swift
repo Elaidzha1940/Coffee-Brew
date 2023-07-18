@@ -15,7 +15,7 @@ import SwiftUI
 struct Coffee_BrewApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Description()
         }
     }
 }

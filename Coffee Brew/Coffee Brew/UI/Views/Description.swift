@@ -63,8 +63,8 @@ struct Description: View {
                             .foregroundColor(.white)
                             .padding()
                         
-                        Text("...Read More")
-                            .foregroundColor(.white)
+//                        Text("...Read More")
+//                            .foregroundColor(.white)
                         
                             Text("Choice of milk")
                                 .font(.custom(Fonts.Rosarivo.regular, size: 20))
