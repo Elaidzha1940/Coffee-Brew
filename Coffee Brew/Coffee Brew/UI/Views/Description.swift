@@ -10,6 +10,11 @@
 import SwiftUI
 
 struct Description: View {
+    
+    let categories: [String] = ["OatMilk", "SoyMilk", "AlmondMilk"]
+    @State private var selected: String = ""
+    @Namespace private var namespacee
+    
     var body: some View {
         
         VStack {
@@ -49,13 +54,37 @@ struct Description: View {
                             Text("Choice of milk")
                                 .foregroundColor(.white)
                             
+                            //
+                            
                             HStack {
-                                OatMilkCm()
-                                SoyMilkCm()
-                                AlmondMilkCm()
+                                ForEach(categories, id: \.self) { category in
+                                    
+                                    ZStack {
+                                        if selected == category {
+                                            RoundedRectangle(cornerRadius: 12)
+                                                .fill(Color.brown)
+                                                .matchedGeometryEffect(id: "category_background", in: namespacee)
+                                            
+                                        }
+                                        Text(category)
+                                            .bold()
+                                            .foregroundColor(selected == category ? .white : .brown)
+                                    }
+                                    .frame(maxWidth: .infinity)
+                                    .frame(height: 50)
+                                    .onTapGesture {
+                                        withAnimation(.spring()) {
+                                            selected = category
+                                        }
+                                    }
+                                }
                             }
+                            .padding()
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            .background(Color.black.opacity(0.4))
+                            
                         }
-                        .padding()
+                      // .padding()
                         
                         HStack(spacing: 50) {
                             VStack {
@@ -76,7 +105,7 @@ struct Description: View {
                             }
                             .cornerRadius(10)
                             .padding(.leading, 20)
-
+                            
                         }
                         .padding(.horizontal)
                     }
