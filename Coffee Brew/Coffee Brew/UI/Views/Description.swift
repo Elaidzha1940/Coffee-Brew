@@ -101,11 +101,8 @@ struct Description: View {
                                     }
                                 }
                             }
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
-                            
                         }
                         .padding()
-                        .padding(.bottom, 20)
                         
                         HStack {
                             VStack {
