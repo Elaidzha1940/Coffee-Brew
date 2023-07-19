@@ -14,5 +14,7 @@ import SwiftUI
 struct Fonts {
     struct BonaNova {
         static let italic = "BonaNova-Italic"
+        static let regular = "BonaNova-Regular"
+        static let bold = "BonaNova-Bold"
     }
 }

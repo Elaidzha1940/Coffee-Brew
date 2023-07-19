@@ -4,7 +4,9 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>BonaNova-Bold.ttf</string>
 		<string>BonaNova-Italic.ttf</string>
+		<string>BonaNova-Regular.ttf</string>
 	</array>
 </dict>
 </plist>

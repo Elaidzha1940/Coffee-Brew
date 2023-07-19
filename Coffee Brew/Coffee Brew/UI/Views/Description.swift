@@ -46,19 +46,19 @@ struct Description: View {
                         
                         HStack {
                             Text("Drizzled with Caramel")
-                                //.font(.custom(Fonts.Rosarivo.italic, size: 20))
+                                .font(.custom(Fonts.BonaNova.italic, size: 20))
                                 .foregroundColor(.white)
                                 .padding(.horizontal)
                             
                             Image("system-star")
                             
                             Text("4-5")
-                               // .font(.custom(Fonts.Rosarivo.italic, size: 16))
+                                .font(.custom(Fonts.BonaNova.italic, size: 16))
                                 .foregroundColor(.white)
                         }
                         
                         Text("A single espresso shot poured into hot foamy milk, with surface topped with mildly sweetened cocoa powder and drizzled with scrumptious caramel syrup")
-                            //.font(.custom(Fonts.Rosarivo.regular, size: 20))
+                            .font(.custom(Fonts.BonaNova.regular, size: 20))
                             .multilineTextAlignment(.leading)
                             .foregroundColor(.white)
                             .padding()
@@ -67,7 +67,7 @@ struct Description: View {
 //                            .foregroundColor(.white)
                         
                             Text("Choice of milk")
-                               // .font(.custom(Fonts.Rosarivo.regular, size: 20))
+                            .font(.custom(Fonts.BonaNova.regular, size: 20))
                                 .foregroundColor(.white)
                                 .padding(.horizontal)
                             
@@ -105,20 +105,20 @@ struct Description: View {
                         .padding()
                         
                         HStack {
-                            VStack {
+                            VStack(alignment: .leading) {
                                 Text("Price")
-                                    //.font(.custom(Fonts.Rosarivo.regular, size: 20))
+                                    .font(.custom(Fonts.BonaNova.regular, size: 20))
                                     .foregroundColor(.white)
                                 
                                 Text("R 249")
-                                    //.font(.custom(Fonts.Rosarivo.regular, size: 20))
+                                    .font(.custom(Fonts.BonaNova.bold, size: 25))
                                     .foregroundColor(.white)
                             }
                             .padding(.horizontal, 25)
                             Button {
                                 //action
                             } label: {
-                                Text("Oat Milk")
+                                Text("BUY NOW")
                                     .frame(width: 280, height: 50)
                                     .foregroundColor(Color(toText: .main))
                                     .background(Color(toElement: .mainbright))
