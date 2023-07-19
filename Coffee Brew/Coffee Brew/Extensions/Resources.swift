@@ -16,7 +16,7 @@ enum Resources {}
 extension Resources {
     
     enum System: String, AssetConvertable {
-        case bigcoffee, heart, star
+        case bigcoffee, heart, star, deleteb, cartrect
         
     }
     

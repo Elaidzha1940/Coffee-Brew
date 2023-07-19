@@ -11,7 +11,23 @@ import SwiftUI
 
 struct Cart: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            ZStack {
+                Color(toElement: .main)
+                
+                VStack {
+                    Text("Cart")
+                        .font(.custom(Fonts.BonaNova.italic, size: 30))
+                        .foregroundColor(.white)
+                    
+                    VStack {
+                        
+                    }
+                }
+            }
+        }
+        .ignoresSafeArea()
     }
 }
 

@@ -14,6 +14,7 @@ struct Description: View {
     let categories: [String] = ["Oat Milk", "Soy Milk", "Almond Milk"]
     @State private var selected: String = ""
     @Namespace private var namespacee
+    @State private var showFullContent = false
     
     var body: some View {
         
@@ -25,7 +26,6 @@ struct Description: View {
                     Image("system-bigcoffee")
                         .resizable()
                         .scaledToFit()
-                        //.scaledToFill()
                     
                     VStack(alignment: .leading, spacing: 5) {
                         HStack {
@@ -41,30 +41,38 @@ struct Description: View {
                                 Image("system-heart")
                             }
                         }
-                        //.padding(.horizontal)
                         .padding()
                         
                         HStack {
                             Text("Drizzled with Caramel")
-                                .font(.custom(Fonts.BonaNova.italic, size: 20))
+                                .font(.custom(Fonts.BonaNova.regular, size: 20))
                                 .foregroundColor(.white)
                                 .padding(.horizontal)
                             
                             Image("system-star")
                             
                             Text("4-5")
-                                .font(.custom(Fonts.BonaNova.italic, size: 16))
+                                .font(.custom(Fonts.BonaNova.regular, size: 16))
                                 .foregroundColor(.white)
                         }
                         
-                        Text("A single espresso shot poured into hot foamy milk, with surface topped with mildly sweetened cocoa powder and drizzled with scrumptious caramel syrup")
-                            .font(.custom(Fonts.BonaNova.regular, size: 20))
-                            .multilineTextAlignment(.leading)
-                            .foregroundColor(.white)
-                            .padding()
-                        
-//                        Text("...Read More")
-//                            .foregroundColor(.white)
+                        VStack(alignment: .trailing) {
+                            if showFullContent {
+                                fullContent()
+                            } else {
+                                shortContent()
+                            }
+                            
+                            Button(action: {
+                                showFullContent.toggle()
+                            }) {
+                                Text(showFullContent ? "...Read Less" : "...Read More")
+                                    .font(.custom(Fonts.BonaNova.bold, size: 18))
+                                    .foregroundColor(.white)
+                                    .padding()
+                            }
+                            .offset(x: -15, y: -62)
+                        }
                         
                             Text("Choice of milk")
                             .font(.custom(Fonts.BonaNova.regular, size: 20))
@@ -138,4 +146,22 @@ struct Description_Previews: PreviewProvider {
     static var previews: some View {
         Description()
     }
+}
+
+func shortContent() -> some View {
+    // Return short content here
+    Text("A single espresso shot poured into hot foamy milk, with surface topped with")
+        .font(.custom(Fonts.BonaNova.regular, size: 18))
+        .multilineTextAlignment(.leading)
+        .foregroundColor(.white)
+        .padding()
+}
+
+func fullContent() -> some View {
+    // Return full content here
+    Text("A single espresso shot poured into hot foamy milk, with surface topped with mildly sweetened cocoa powder and drizzled with scrumptious caramel syrup")
+        .font(.custom(Fonts.BonaNova.regular, size: 18))
+        .multilineTextAlignment(.leading)
+        .foregroundColor(.white)
+        .padding()
 }
