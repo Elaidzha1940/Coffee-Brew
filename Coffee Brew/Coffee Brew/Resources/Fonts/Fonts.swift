@@ -12,8 +12,7 @@
 import SwiftUI
 
 struct Fonts {
-    struct Rosarivo {
-        static let italic = "Rosarivo-Italic"
-        static let regular = "Rosarivo-Regular"
+    struct BonaNova {
+        static let italic = "BonaNova-Italic"
     }
 }
