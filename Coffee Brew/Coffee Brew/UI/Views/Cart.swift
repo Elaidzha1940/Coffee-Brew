@@ -45,8 +45,26 @@ struct Cart: View {
                                         .font(.custom(Fonts.BonaNova.bold, size: 17))
                                         .foregroundColor(.white)
                                 }
-                                //1.
+                                Spacer()
+                                
+                                HStack {
+                                    Button(action: {}) {
+                                        Image("system-mines")
+                                    }
+                                    
+                                    Text("1")
+                                        .font(.custom(Fonts.BonaNova.regular, size: 25))
+                                        .foregroundColor(.white)
+                                        .padding(.horizontal, 3)
+                                    
+                                    Button(action: {}) {
+                                        Image("system-plus")
+                                    }
+                                }
+                                .background(Color(toElement: .cartrect))
+
                             }
+                            .padding(.horizontal, 20)
                         }
                         ZStack {
                             Rectangle()
