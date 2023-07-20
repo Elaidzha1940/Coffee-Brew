@@ -61,11 +61,11 @@ struct Cart: View {
                                         Image("system-plus")
                                     }
                                 }
-                                .background(Color(toElement: .cartrect))
-
+                                .background(Color(toElement: .backgrey))
                             }
                             .padding(.horizontal, 20)
                         }
+                        
                         ZStack {
                             Rectangle()
                                 .frame(width: 410, height: 120)
@@ -88,8 +88,25 @@ struct Cart: View {
                                         .font(.custom(Fonts.BonaNova.bold, size: 17))
                                         .foregroundColor(.white)
                                 }
-                                //2.
+                                Spacer()
+                                
+                                HStack {
+                                    Button(action: {}) {
+                                        Image("system-mines")
+                                    }
+                                    
+                                    Text("1")
+                                        .font(.custom(Fonts.BonaNova.regular, size: 25))
+                                        .foregroundColor(.white)
+                                        .padding(.horizontal, 3)
+                                    
+                                    Button(action: {}) {
+                                        Image("system-plus")
+                                    }
+                                }
+                                .background(Color(toElement: .backgrey))
                             }
+                            .padding(.horizontal, 20)
                         }
                         
                         ZStack {
@@ -114,8 +131,24 @@ struct Cart: View {
                                         .font(.custom(Fonts.BonaNova.bold, size: 17))
                                         .foregroundColor(.white)
                                 }
-                                //3.
+                                Spacer()
+                                HStack {
+                                    Button(action: {}) {
+                                        Image("system-mines")
+                                    }
+                                    
+                                    Text("1")
+                                        .font(.custom(Fonts.BonaNova.regular, size: 25))
+                                        .foregroundColor(.white)
+                                        .padding(.horizontal, 3)
+                                    
+                                    Button(action: {}) {
+                                        Image("system-plus")
+                                    }
+                                }
+                                .background(Color(toElement: .backgrey))
                             }
+                            .padding(.horizontal, 20)
                         }
                     }
                 }
