@@ -21,10 +21,14 @@ struct Tabbar: View {
         VStack {
             HStack {
                 
-                
+                ForEach(Tab.allCases, id: \.rawValue) { tab in
+                    Spacer()
+                    Image("system")
+                }
             }
             .frame(width: nil, height: 60)
-            .background(Color(toElement: <#T##Color.Element#>))
+            .cornerRadius(10)
+            //.background(Color(toElement: .tabbar))
         }
     }
 }
