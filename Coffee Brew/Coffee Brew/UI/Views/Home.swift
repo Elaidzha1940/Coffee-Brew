@@ -10,6 +10,8 @@
 import SwiftUI
 
 struct Home: View {
+    
+    @State private var search: String = ""
     var body: some View {
         
         VStack {
@@ -18,15 +20,31 @@ struct Home: View {
                 ZStack {
                     Color(toElement: .main)
                     
-                    VStack {
-                        Text("deja")
-                            .font(.custom(Fonts.BonaNova.italic, size: 40))
-                            .foregroundColor(Color(toText: .deja))
-
-                        Text("Brew")
-                            .font(.custom(Fonts.BonaNova.regular, size: 50))
-                        .foregroundColor(Color(toText: .deja))
-
+                    VStack(alignment: .leading) {
+                        
+                        HStack(alignment: .center) {
+                            VStack(alignment: .leading, spacing: -10) {
+                                Text("deja")
+                                    .font(.custom(Fonts.BonaNova.italic, size: 40))
+                                    .foregroundColor(Color(toText: .deja))
+                                
+                                Text("Brew")
+                                    .font(.custom(Fonts.BonaNova.regular, size: 50))
+                                    .foregroundColor(Color(toText: .brew))
+                            }
+                            Spacer()
+                            Image("system-man")
+                        }
+                        .padding()
+                        
+                        //MARK: SearchBar
+                        HStack {
+                            TextField("", text: $search)
+                                .foregroundColor(Color(toText: .searchtx))
+                        }
+                        .padding()
+                        .background(Color(toElement: .searchel))
+                        .cornerRadius(12)
                     }
                 }
             }
