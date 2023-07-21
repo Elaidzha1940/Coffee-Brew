@@ -11,22 +11,34 @@ import SwiftUI
 
 struct Tabbar: View {
     
-    enum Tab: String, CaseIterable {
-        
-        case house
-        case basket
-        case heart
-        case bell
+    @Binding var selectedTab: Tab
+    private var fillImage: String {
+        selectedTab.rawValue + ".fill"
     }
-                    
+    
     var body: some View {
         
-        Text("Tabbar")
+        VStack {
+            HStack {
+                
+                
+            }
+            .frame(width: nil, height: 60)
+            .background(Color(toElement: <#T##Color.Element#>))
+        }
     }
 }
 
 struct Tabbar_Previews: PreviewProvider {
     static var previews: some View {
-        Tabbar()
+        Tabbar(selectedTab: .constant(.house))
     }
+}
+
+enum Tab: String, CaseIterable {
+    
+    case house
+    case basket
+    case heart
+    case bell
 }
