@@ -156,21 +156,29 @@ struct Cart: View {
                             .frame(height: 1)
                             .foregroundColor(Color(toElement: .backgrey))
                             .padding(4)
-                        //
+                        
+                        //MARK: CouponCode
                         HStack {
                             ZStack {
-                                HStack {
+                            
                                 Rectangle()
-                                    .frame(width: 350, height: 60)
-                                Text("Apply Coupon Code")
-                                    .font(.custom(Fonts.BonaNova.regular, size: 25))
-                                    .foregroundColor(Color(toText: .cart))
-                                Spacer()
-                                Image("system-next")
-                                    .foregroundColor(Color(toText: .cart))
+                                    .foregroundColor(Color(toElement: .couponcode))
+                                    .frame(width: 410, height: 50)
+                                    .cornerRadius(8)
+                                HStack(spacing: 20) {
+                                    Text("Apply Coupon Code")
+                                        .font(.custom(Fonts.BonaNova.regular, size: 25))
+                                        .foregroundColor(Color(toText: .cart))
+                                        .padding(.horizontal, 20)
+                                        .offset(x: -25)
+
+                                    Image(systemName: "chevron.right")
+                                        .foregroundColor(Color(toText: .cart))
+                                        .padding(.horizontal, 20)
+                                        .offset(x: 25)
+                                }
                             }
                         }
-                        .padding(.horizontal, 30)
                     }
                 }
             }
