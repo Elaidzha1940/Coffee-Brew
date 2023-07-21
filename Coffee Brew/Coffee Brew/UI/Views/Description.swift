@@ -118,9 +118,13 @@ struct Description: View {
                                     .font(.custom(Fonts.BonaNova.regular, size: 20))
                                     .foregroundColor(.white)
                                 
-                                Text("R 249")
-                                    .font(.custom(Fonts.BonaNova.bold, size: 25))
-                                    .foregroundColor(.white)
+                                HStack(spacing: 3) {
+                                    Image(systemName: "eurosign")
+                                        .foregroundColor(.white)
+                                    Text("299")
+                                        .font(.custom(Fonts.BonaNova.bold, size: 25))
+                                        .foregroundColor(.white)
+                                }
                             }
                             .padding(.horizontal, 25)
                             Button {

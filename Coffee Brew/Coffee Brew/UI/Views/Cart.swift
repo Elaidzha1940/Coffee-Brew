@@ -41,9 +41,13 @@ struct Cart: View {
                                     Text("Dalgona Macha")
                                         .font(.custom(Fonts.BonaNova.regular, size: 17))
                                         .foregroundColor(.white)
-                                    Text("R 248")
-                                        .font(.custom(Fonts.BonaNova.bold, size: 17))
-                                        .foregroundColor(.white)
+                                    HStack(spacing: 3) {
+                                        Image(systemName: "eurosign")
+                                            .foregroundColor(.white)
+                                        Text("209")
+                                            .font(.custom(Fonts.BonaNova.bold, size: 17))
+                                            .foregroundColor(.white)
+                                    }
                                 }
                                 Spacer()
                                 
@@ -64,7 +68,7 @@ struct Cart: View {
                                 .background(Color(toElement: .backgrey))
                             }
                             .padding(.horizontal, 20)
-                           
+                            
                         }
                         
                         ZStack {
@@ -85,9 +89,13 @@ struct Cart: View {
                                     Text("Bursting Bluberry")
                                         .font(.custom(Fonts.BonaNova.regular, size: 17))
                                         .foregroundColor(.white)
-                                    Text("R 99")
-                                        .font(.custom(Fonts.BonaNova.bold, size: 17))
-                                        .foregroundColor(.white)
+                                    HStack(spacing: 3) {
+                                        Image(systemName: "eurosign")
+                                            .foregroundColor(.white)
+                                        Text("249")
+                                            .font(.custom(Fonts.BonaNova.bold, size: 17))
+                                            .foregroundColor(.white)
+                                    }
                                 }
                                 Spacer()
                                 
@@ -128,9 +136,13 @@ struct Cart: View {
                                     Text("Cinnamon & Cocoa")
                                         .font(.custom(Fonts.BonaNova.regular, size: 17))
                                         .foregroundColor(.white)
-                                    Text("R 299")
-                                        .font(.custom(Fonts.BonaNova.bold, size: 17))
-                                        .foregroundColor(.white)
+                                    HStack(spacing: 3) {
+                                        Image(systemName: "eurosign")
+                                            .foregroundColor(.white)
+                                        Text("299")
+                                            .font(.custom(Fonts.BonaNova.bold, size: 17))
+                                            .foregroundColor(.white)
+                                    }
                                 }
                                 Spacer()
                                 HStack {
@@ -151,7 +163,8 @@ struct Cart: View {
                             }
                             .padding(.horizontal, 20)
                         }
-                         Line()
+                        //MARK: LineShape
+                        Line()
                             .stroke(style: StrokeStyle(lineWidth: 1, dash: [6]))
                             .frame(height: 1)
                             .foregroundColor(Color(toElement: .backgrey))
@@ -160,7 +173,7 @@ struct Cart: View {
                         //MARK: CouponCode
                         HStack {
                             ZStack {
-                            
+                                
                                 Rectangle()
                                     .foregroundColor(Color(toElement: .couponcode))
                                     .frame(width: 410, height: 50)
@@ -171,7 +184,7 @@ struct Cart: View {
                                         .foregroundColor(Color(toText: .cart))
                                         .padding(.horizontal, 20)
                                         .offset(x: -25)
-
+                                    
                                     Image(systemName: "chevron.right")
                                         .foregroundColor(Color(toText: .cart))
                                         .padding(.horizontal, 20)
@@ -179,6 +192,55 @@ struct Cart: View {
                                 }
                             }
                         }
+                        VStack(alignment: .leading, spacing: 4) {
+                            
+                            HStack {
+                                Text("Delivery Charges")
+                                    .font(.custom(Fonts.BonaNova.regular, size: 20))
+                                    .foregroundColor(.white)
+                                Spacer()
+                                HStack(spacing: 3) {
+                                    Image(systemName: "eurosign")
+                                        .foregroundColor(.white)
+                                    Text("46")
+                                        .font(.custom(Fonts.BonaNova.bold, size: 17))
+                                        .foregroundColor(.white)
+                                }
+                            }
+                            
+                            HStack {
+                                Text("Taxes")
+                                    .font(.custom(Fonts.BonaNova.regular, size: 20))
+                                    .foregroundColor(.white)
+                                Spacer()
+                                HStack(spacing: 3) {
+                                    Image(systemName: "eurosign")
+                                        .foregroundColor(.white)
+                                    Text("64.28")
+                                        .font(.custom(Fonts.BonaNova.bold, size: 17))
+                                        .foregroundColor(.white)
+                                }
+                            }
+                        }
+                        .padding()
+                        
+                        //MARK: LineShape
+                        Line()
+                            .stroke(style: StrokeStyle(lineWidth: 1, dash: [6]))
+                            .frame(height: 1)
+                            .foregroundColor(Color(toElement: .backgrey))
+                            .padding(4)
+                        
+                        HStack {
+                            Text("Grand Total")
+                                .font(.custom(Fonts.BonaNova.regular, size: 20))
+                                .foregroundColor(.white)
+                            
+                            Image(systemName: "eurosign")
+                                .foregroundColor(.white)
+                            Text("1000.28")
+                                .font(.custom(Fonts.BonaNova.bold, size: 30))
+                                .foregroundColor(.white)                        }
                     }
                 }
             }
