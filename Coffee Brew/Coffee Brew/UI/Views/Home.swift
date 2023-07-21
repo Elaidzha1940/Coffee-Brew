@@ -43,13 +43,16 @@ struct Home: View {
                                 Image("system-search")
                                     .padding(.trailing, 8)
                                 TextField("Browse your favorite coffee...", text: $search)
+                                    .foregroundColor(.white)
                             }
                         }
                         .padding()
-                        .foregroundColor(.blue)
+                        .foregroundColor(.white)
                         .background(Color(toElement: .searchrect))
                         .cornerRadius(12)
                         .padding(.horizontal, 5)
+                        
+                        //
                     }
                 }
             }

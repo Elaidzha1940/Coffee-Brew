@@ -10,6 +10,15 @@
 import SwiftUI
 
 struct Tabbar: View {
+    
+    enum Tab: String, CaseIterable {
+        
+        case house
+        case basket
+        case heart
+        case bell
+    }
+                    
     var body: some View {
         
         Text("Tabbar")
