@@ -127,6 +127,7 @@ struct Description: View {
                                 }
                             }
                             .padding(.horizontal, 25)
+                            
                             Button {
                                 //action
                             } label: {
@@ -134,8 +135,8 @@ struct Description: View {
                                     .frame(width: 280, height: 50)
                                     .foregroundColor(Color(toText: .main))
                                     .background(Color(toElement: .mainbright))
+                                    .cornerRadius(10)
                             }
-                            .cornerRadius(10)
                             .padding(.leading, 25)
                         }
                     }

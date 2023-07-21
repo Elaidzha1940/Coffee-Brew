@@ -233,14 +233,30 @@ struct Cart: View {
                         
                         HStack {
                             Text("Grand Total")
-                                .font(.custom(Fonts.BonaNova.regular, size: 20))
+                                .font(.custom(Fonts.BonaNova.bold, size: 30))
                                 .foregroundColor(.white)
+                            
+                            Spacer()
                             
                             Image(systemName: "eurosign")
                                 .foregroundColor(.white)
                             Text("1000.28")
                                 .font(.custom(Fonts.BonaNova.bold, size: 30))
-                                .foregroundColor(.white)                        }
+                                .foregroundColor(.white)
+                        }
+                        .padding()
+                        
+                        Button {
+                            //action
+                        } label: {
+                            Text("BUY NOW")
+                                .frame(width: 410, height: 50)
+                                .foregroundColor(Color(toText: .main))
+                                .background(Color(toElement: .mainbright))
+                                .cornerRadius(10)
+                        }
+                        
+                        //MARK: Tabbar
                     }
                 }
             }
