@@ -151,6 +151,10 @@ struct Cart: View {
                             }
                             .padding(.horizontal, 20)
                         }
+                        
+                        Divider()
+                            .background(Color(toElement: .couponcode))
+                            .strikethrough()
                     }
                 }
             }
