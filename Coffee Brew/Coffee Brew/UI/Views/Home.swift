@@ -39,12 +39,17 @@ struct Home: View {
                         
                         //MARK: SearchBar
                         HStack {
-                            TextField("", text: $search)
-                                .foregroundColor(Color(toText: .searchtx))
+                            HStack {
+                                Image("system-search")
+                                    .padding(.trailing, 8)
+                                TextField("Browse your favorite coffee...", text: $search)
+                            }
                         }
                         .padding()
-                        .background(Color(toElement: .searchel))
+                        .foregroundColor(.blue)
+                        .background(Color(toElement: .searchrect))
                         .cornerRadius(12)
+                        .padding(.horizontal, 5)
                     }
                 }
             }
