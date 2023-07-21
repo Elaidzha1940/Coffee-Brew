@@ -151,11 +151,26 @@ struct Cart: View {
                             }
                             .padding(.horizontal, 20)
                         }
-                        
                          Line()
-                            .stroke(style: StrokeStyle(lineWidth: 1, dash: [5]))
+                            .stroke(style: StrokeStyle(lineWidth: 1, dash: [6]))
                             .frame(height: 1)
-                            .foregroundColor(Color(toElement: .mainbright))
+                            .foregroundColor(Color(toElement: .backgrey))
+                            .padding(4)
+                        //
+                        HStack {
+                            ZStack {
+                                HStack {
+                                Rectangle()
+                                    .frame(width: 350, height: 60)
+                                Text("Apply Coupon Code")
+                                    .font(.custom(Fonts.BonaNova.regular, size: 25))
+                                    .foregroundColor(Color(toText: .cart))
+                                Spacer()
+                                Image("system-next")
+                                    .foregroundColor(Color(toText: .cart))
+                            }
+                        }
+                        .padding(.horizontal, 30)
                     }
                 }
             }
