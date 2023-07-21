@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E40710482A66D4CA007CC9F5 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40710472A66D4CA007CC9F5 /* Fonts.swift */; };
+		E4158EA92A6AEDC00061BC36 /* Navigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4158EA82A6AEDC00061BC36 /* Navigate.swift */; };
+		E4158EAB2A6AEE1B0061BC36 /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4158EAA2A6AEE1B0061BC36 /* Tabbar.swift */; };
 		E4608CC32A6822BC0056CFBD /* BonaNova-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4608CC22A6822BC0056CFBD /* BonaNova-Italic.ttf */; };
 		E4608CC52A6824670056CFBD /* BonaNova-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4608CC42A6824670056CFBD /* BonaNova-Bold.ttf */; };
 		E4608CC72A6824700056CFBD /* BonaNova-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4608CC62A6824700056CFBD /* BonaNova-Regular.ttf */; };
@@ -32,6 +34,8 @@
 /* Begin PBXFileReference section */
 		E40710472A66D4CA007CC9F5 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		E407104B2A66D68A007CC9F5 /* Coffee-Brew-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Coffee-Brew-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E4158EA82A6AEDC00061BC36 /* Navigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigate.swift; sourceTree = "<group>"; };
+		E4158EAA2A6AEE1B0061BC36 /* Tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar.swift; sourceTree = "<group>"; };
 		E4608CC22A6822BC0056CFBD /* BonaNova-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BonaNova-Italic.ttf"; sourceTree = "<group>"; };
 		E4608CC42A6824670056CFBD /* BonaNova-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BonaNova-Bold.ttf"; sourceTree = "<group>"; };
 		E4608CC62A6824700056CFBD /* BonaNova-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BonaNova-Regular.ttf"; sourceTree = "<group>"; };
@@ -184,6 +188,8 @@
 		E4941FD32A64345400AAA6A4 /* Typeofmilk */ = {
 			isa = PBXGroup;
 			children = (
+				E4158EA82A6AEDC00061BC36 /* Navigate.swift */,
+				E4158EAA2A6AEE1B0061BC36 /* Tabbar.swift */,
 				E4941FCD2A641C3C00AAA6A4 /* OatMilkCm.swift */,
 				E4941FCF2A64337B00AAA6A4 /* SoyMilkCm.swift */,
 				E4941FD12A6433C900AAA6A4 /* AlmondMilkCm.swift */,
@@ -272,10 +278,12 @@
 				E4941FAF2A63100900AAA6A4 /* Color.swift in Sources */,
 				E4941FBD2A63112100AAA6A4 /* AssetConvertable.swift in Sources */,
 				E4941FD22A6433C900AAA6A4 /* AlmondMilkCm.swift in Sources */,
+				E4158EAB2A6AEE1B0061BC36 /* Tabbar.swift in Sources */,
 				E4941F9F2A630BC700AAA6A4 /* ContentView.swift in Sources */,
 				E4941FC12A63113E00AAA6A4 /* ColorAsset.swift in Sources */,
 				E4941F9D2A630BC700AAA6A4 /* Coffee_BrewApp.swift in Sources */,
 				E4941FCC2A63153800AAA6A4 /* Description.swift in Sources */,
+				E4158EA92A6AEDC00061BC36 /* Navigate.swift in Sources */,
 				E4941FC82A63151400AAA6A4 /* Home.swift in Sources */,
 				E4941FCA2A63152C00AAA6A4 /* Cart.swift in Sources */,
 				E4941FD02A64337B00AAA6A4 /* SoyMilkCm.swift in Sources */,
