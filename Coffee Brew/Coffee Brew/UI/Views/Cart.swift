@@ -64,10 +64,7 @@ struct Cart: View {
                                 .background(Color(toElement: .backgrey))
                             }
                             .padding(.horizontal, 20)
-                            .offset(x: item.offset)
-                            .gesture(DragGesture()
-                                .onChanged(onChanged(value:))
-                                .onEnded(onEnd(value:)))
+                           
                         }
                         
                         ZStack {
