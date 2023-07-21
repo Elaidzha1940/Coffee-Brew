@@ -23,7 +23,8 @@ struct Tabbar: View {
                 
                 ForEach(Tab.allCases, id: \.rawValue) { tab in
                     Spacer()
-                    Image("system")
+                    Image(selectedTab == tab ? fillImage : tab.rawValue)
+                    Spacer()
                 }
             }
             .frame(width: nil, height: 60)
@@ -35,7 +36,7 @@ struct Tabbar: View {
 
 struct Tabbar_Previews: PreviewProvider {
     static var previews: some View {
-        Tabbar(selectedTab: .constant(.house))
+        Tabbar(selectedTab: .constant(.basket))
     }
 }
 
