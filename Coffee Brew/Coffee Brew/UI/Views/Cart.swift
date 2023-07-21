@@ -152,9 +152,10 @@ struct Cart: View {
                             .padding(.horizontal, 20)
                         }
                         
-                        Divider()
-                            .background(Color(toElement: .couponcode))
-                            .strikethrough()
+                         Line()
+                            .stroke(style: StrokeStyle(lineWidth: 1, dash: [5]))
+                            .frame(height: 1)
+                            .foregroundColor(Color(toElement: .mainbright))
                     }
                 }
             }
@@ -169,3 +170,12 @@ struct Cart_Previews: PreviewProvider {
     }
 }
 
+//MARK: Line / Divider
+struct Line: Shape {
+    func path(in rect: CGRect) -> Path {
+        var path = Path ()
+        path.move(to: CGPoint(x: 0, y: 0))
+        path.addLine(to: CGPoint(x: rect.width, y: 0))
+        return path
+    }
+}
