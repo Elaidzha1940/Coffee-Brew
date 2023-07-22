@@ -25,14 +25,14 @@ struct Cart: View {
                         
                         ZStack {
                             Rectangle()
-                                .frame(width: 410, height: 120)
+                                .frame(width: 410, height: 110)
                                 .foregroundColor(Color(toElement: .cartrect))
                                 .cornerRadius(12)
                             
                             HStack {
                                 Image("system-macha")
                                     .resizable()
-                                    .frame(width: 100, height: 100)
+                                    .frame(width: 90, height: 90)
                                 
                                 VStack(alignment: .leading, spacing: 10) {
                                     Text("Capuccino")
@@ -73,14 +73,14 @@ struct Cart: View {
                         
                         ZStack {
                             Rectangle()
-                                .frame(width: 410, height: 120)
+                                .frame(width: 410, height: 110)
                                 .foregroundColor(Color(toElement: .cartrect))
                                 .cornerRadius(12)
                             
                             HStack {
                                 Image("system-blueberry")
                                     .resizable()
-                                    .frame(width: 100, height: 100)
+                                    .frame(width: 90, height: 90)
                                 
                                 VStack(alignment: .leading, spacing: 10) {
                                     Text("Capuccino")
@@ -120,14 +120,14 @@ struct Cart: View {
                         
                         ZStack {
                             Rectangle()
-                                .frame(width: 410, height: 120)
+                                .frame(width: 410, height: 110)
                                 .foregroundColor(Color(toElement: .cartrect))
                                 .cornerRadius(12)
                             
                             HStack {
                                 Image("system-cocoa")
                                     .resizable()
-                                    .frame(width: 100, height: 100)
+                                    .frame(width: 90, height: 90)
                                 
                                 VStack(alignment: .leading, spacing: 10) {
                                     Text("Capuccino")
@@ -144,7 +144,9 @@ struct Cart: View {
                                             .foregroundColor(.white)
                                     }
                                 }
+                                
                                 Spacer()
+                                
                                 HStack {
                                     Button(action: {}) {
                                         Image("system-mines")
@@ -172,23 +174,29 @@ struct Cart: View {
                         
                         //MARK: CouponCode
                         HStack {
-                            ZStack {
-                                
-                                Rectangle()
-                                    .foregroundColor(Color(toElement: .couponcode))
-                                    .frame(width: 410, height: 50)
-                                    .cornerRadius(8)
-                                HStack(spacing: 20) {
-                                    Text("Apply Coupon Code")
-                                        .font(.custom(Fonts.BonaNova.regular, size: 25))
-                                        .foregroundColor(Color(toText: .cart))
-                                        .padding(.horizontal, 20)
-                                        .offset(x: -25)
+                            
+                            Button {
+                                //action
+                            } label: {
+                                ZStack {
                                     
-                                    Image(systemName: "chevron.right")
-                                        .foregroundColor(Color(toText: .cart))
-                                        .padding(.horizontal, 20)
-                                        .offset(x: 25)
+                                    Rectangle()
+                                        .foregroundColor(Color(toElement: .couponcode))
+                                        .frame(width: 410, height: 45)
+                                        .cornerRadius(8)
+                                    
+                                    HStack(spacing: 20) {
+                                        Text("Apply Coupon Code")
+                                            .font(.custom(Fonts.BonaNova.regular, size: 23))
+                                            .foregroundColor(Color(toText: .cart))
+                                            .padding(.horizontal, 20)
+                                            .offset(x: -25)
+                                        
+                                        Image(systemName: "chevron.right")
+                                            .foregroundColor(Color(toText: .cart))
+                                            .padding(.horizontal, 20)
+                                            .offset(x: 25)
+                                    }
                                 }
                             }
                         }
@@ -258,6 +266,7 @@ struct Cart: View {
                         
                         //MARK: Tabbar
                     }
+                    .padding(.bottom, 30)
                 }
             }
         }

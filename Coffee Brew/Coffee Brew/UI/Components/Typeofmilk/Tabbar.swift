@@ -26,7 +26,12 @@ struct Tabbar: View {
                 .tabItem {
                     Image("system-heartt")
                 }
+            Navigate()
+                .tabItem {
+                    Image("system-bell")
+                }
         }
+        .background(Color.red)
         .preferredColorScheme(.dark)
     }
 }
