@@ -268,6 +268,7 @@ struct Cart: View {
                     }
                     .padding(.bottom, 30)
                 }
+                .padding(.bottom, 30)
             }
         }
         .ignoresSafeArea()
