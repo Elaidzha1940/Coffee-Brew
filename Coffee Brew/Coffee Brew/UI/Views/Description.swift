@@ -67,11 +67,11 @@ struct Description: View {
                                 showFullContent.toggle()
                             }) {
                                 Text(showFullContent ? "...Read Less" : "...Read More")
-                                    .font(.custom(Fonts.BonaNova.bold, size: 18))
+                                    .font(.custom(Fonts.BonaNova.bold, size: 16))
                                     .foregroundColor(.white)
-                                    .padding()
+                                    //.padding()
                             }
-                            .offset(x: -15, y: -62)
+                            .offset(x: -15, y: -22)
                         }
                         
                             Text("Choice of milk")
@@ -111,6 +111,7 @@ struct Description: View {
                             }
                         }
                         .padding()
+                        .padding(.bottom)
                         
                         HStack {
                             VStack(alignment: .leading) {
@@ -140,7 +141,9 @@ struct Description: View {
                             .padding(.leading, 25)
                         }
                     }
+                    .padding(.bottom, 35)
                 }
+                .padding(.top, 5)
             }
         }
         .ignoresSafeArea()
@@ -155,8 +158,8 @@ struct Description_Previews: PreviewProvider {
 
 func shortContent() -> some View {
     // Return short content here
-    Text("A single espresso shot poured into hot foamy milk, with surface topped with")
-        .font(.custom(Fonts.BonaNova.regular, size: 18))
+    Text("A single espresso shot poured into hot foamy milk, with surface topped with mildly sweetened cocoa powder and")
+        .font(.custom(Fonts.BonaNova.regular, size: 16))
         .multilineTextAlignment(.leading)
         .foregroundColor(.white)
         .padding()
@@ -164,8 +167,8 @@ func shortContent() -> some View {
 
 func fullContent() -> some View {
     // Return full content here
-    Text("A single espresso shot poured into hot foamy milk, with surface topped with mildly sweetened cocoa powder and drizzled with scrumptious caramel syrup")
-        .font(.custom(Fonts.BonaNova.regular, size: 18))
+    Text("A single espresso shot poured into hot foamy milk, with surface topped with mildly sweetened cocoa powder and drizzled with scrumptious caramel syrup.")
+        .font(.custom(Fonts.BonaNova.regular, size: 16))
         .multilineTextAlignment(.leading)
         .foregroundColor(.white)
         .padding()
