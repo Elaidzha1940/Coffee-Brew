@@ -29,7 +29,6 @@ struct Tabbar: View {
             }
             .frame(width: nil, height: 60)
             .cornerRadius(10)
-            //.background(Color(toElement: .tabbar))
         }
     }
 }
