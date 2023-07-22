@@ -27,7 +27,7 @@ struct Tabbar: View {
                     Image("system-heartt")
                 }
         }
-        .accentColor(.red)
+        .preferredColorScheme(.dark)
     }
 }
 

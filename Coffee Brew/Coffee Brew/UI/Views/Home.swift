@@ -47,7 +47,7 @@ struct Home: View {
                             }
                         }
                         .padding()
-                        .foregroundColor(.white)
+                        .foregroundColor(Color(toText: .searchtx))
                         .background(Color(toElement: .searchrect))
                         .cornerRadius(12)
                         .padding(.horizontal, 5)
@@ -57,6 +57,7 @@ struct Home: View {
                 }
             }
         }
+        .preferredColorScheme(.dark)
         .ignoresSafeArea()
     }
 }
