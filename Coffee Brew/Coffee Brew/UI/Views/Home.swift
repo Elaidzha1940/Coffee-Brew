@@ -81,9 +81,9 @@ struct Home: View {
                         }
                         .cornerRadius(50, corners: .topRight)
                     }
+                    .padding(.bottom)
                     .padding(.bottom, 30)
                 }
-                .padding(.bottom, 20)
             }
         }
         .preferredColorScheme(.dark)
