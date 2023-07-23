@@ -55,7 +55,7 @@ struct Home: View {
                         //
                         ZStack {
                             Rectangle()
-                                .frame(width: 50, height: 600)
+                                .frame(width: 50, height: 550, alignment: .leading)
                                 .foregroundColor(Color(toElement: .couponcode))
                             
                             VStack(spacing: 70) {
@@ -76,8 +76,12 @@ struct Home: View {
                                     .foregroundColor(Color(toText: .searchtx))
                             }
                         }
+                        .cornerRadius(50, corners: .topLeft)
+                        .padding(.horizontal, -20)
                     }
+                    .padding(.bottom, 30)
                 }
+                .padding(.bottom, 20)
             }
         }
         .preferredColorScheme(.dark)
@@ -88,4 +92,10 @@ struct Home_Previews: PreviewProvider {
     static var previews: some View {
         Home()
     }
+}
+
+struct RoundedCorner: Shape {
+    
+    var 
+    var
 }
