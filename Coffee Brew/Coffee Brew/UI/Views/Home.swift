@@ -75,9 +75,11 @@ struct Home: View {
                                     .font(.custom(Fonts.BonaNova.regular, size: 18))
                                     .foregroundColor(Color(toText: .searchtx))
                             }
+                            .edgesIgnoringSafeArea(.leading)
+                            .padding(.horizontal, -20)
+
                         }
                         .cornerRadius(50, corners: .topRight)
-                        .padding(.horizontal, -20)
                     }
                     .padding(.bottom, 30)
                 }
