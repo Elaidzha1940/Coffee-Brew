@@ -23,38 +23,56 @@ struct MatchedG_Previews: PreviewProvider {
 
 struct MatchedGeometryEffectexample: View {
     
-    let categories: [String] = ["Americano", "Cappuccino", "Espresso"]
+    let categories: [String] = ["Cappuccino", "Latte", "Americano", "Espresso", "Flat White"]
     @State private var selected: String = ""
     @Namespace private var namespacee
     
     var body: some View {
         
-        HStack {
-            ForEach(categories, id: \.self) { category in
+        ZStack {
+            Rectangle()
+                .frame(width: 50, height: 550, alignment: .leading)
+                .foregroundColor(Color(toElement: .couponcode))
+            VStack(spacing: 70) {
                 
-                ZStack(alignment: .bottom) {
-                    if selected == category {
-                        RoundedRectangle(cornerRadius: 12)
-                            .fill(Color.white)
-                            .matchedGeometryEffect(id: "category_background", in: namespacee)
-                            .frame(width: 70, height: 2)
-                            .offset(y: 10)
+                ForEach(categories, id: \.self) { category in
+                    ZStack(alignment: .bottom) {
+                        if selected == category {
+                            
+                        }
+                        Text(category)
+                            .bold()
+                            .foregroundColor(selected == category ? Color(toText: .brew) : Color(toText: .cart))
                     }
-                    Text(category)
-                        .bold()
-                        .foregroundColor(selected == category ? .white : .black)
-                }
-                .frame(maxWidth: .infinity)
-                .frame(height: 50)
-                .onTapGesture {
-                    withAnimation(.spring()) {
-                        selected = category
+                    .rotationEffect(.degrees(-90))
+                    .onTapGesture {
+                        withAnimation(.spring()) {
+                            selected = category
+                        }
                     }
                 }
             }
+            .edgesIgnoringSafeArea(.leading)
+            .padding(.horizontal, -20)
         }
-        .padding()
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.black.opacity(0.4))
+        .cornerRadius(50, corners: .topRight)
+    }
+}
+
+
+struct RoundedCorner: Shape {
+    
+    var radius: CGFloat = .infinity
+    var corners: UIRectCorner = .allCorners
+    
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        return Path(path.cgPath)
+    }
+}
+
+extension View {
+    func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
+        clipShape(RoundedCorner(radius: radius, corners: corners))
     }
 }

@@ -79,7 +79,6 @@ struct Home: View {
                             .padding(.horizontal, -20)
 
                         }
-                        .cornerRadius(50, corners: .topRight)
                     }
                     .padding(.bottom)
                     .padding(.bottom, 30)
@@ -90,25 +89,11 @@ struct Home: View {
         .ignoresSafeArea()
     }
 }
+
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
         Home()
     }
 }
 
-struct RoundedCorner: Shape {
-    
-    var radius: CGFloat = .infinity
-    var corners: UIRectCorner = .allCorners
-    
-    func path(in rect: CGRect) -> Path {
-        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
-        return Path(path.cgPath)
-    }
-}
 
-extension View {
-    func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
-        clipShape(RoundedCorner(radius: radius, corners: corners))
-    }
-}
