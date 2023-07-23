@@ -76,7 +76,7 @@ struct Home: View {
                                     .foregroundColor(Color(toText: .searchtx))
                             }
                         }
-                        .cornerRadius(50, corners: .topLeft)
+                        .cornerRadius(50, corners: .topRight)
                         .padding(.horizontal, -20)
                     }
                     .padding(.bottom, 30)
@@ -96,6 +96,11 @@ struct Home_Previews: PreviewProvider {
 
 struct RoundedCorner: Shape {
     
-    var 
-    var
+    var radius: CGFloat = .infinity
+    var corners: UIRectCorner = .allCorners
+    
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        return Path(path.cgPath)
+    }
 }
