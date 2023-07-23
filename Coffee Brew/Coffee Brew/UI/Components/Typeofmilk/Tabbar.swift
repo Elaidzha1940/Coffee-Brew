@@ -16,11 +16,11 @@ struct Tabbar: View {
         TabView {
             Home()
                 .tabItem {
-                    Image(systemName: "house")
+                    Image(systemName: "house.fill")
                 }
             Cart()
                 .tabItem {
-                    Image("system-basket")
+                    Image(systemName: "basket.fill")
                 }
             Navigate()
                 .tabItem {
@@ -28,10 +28,10 @@ struct Tabbar: View {
                 }
             Navigate()
                 .tabItem {
-                    Image("system-bell")
+                    Image(systemName: "bell.fill")
                 }
         }
-        .accentColor(.blue)
+        .accentColor(Color(toElement: .mainbright))
         .preferredColorScheme(.dark)
     }
 }
