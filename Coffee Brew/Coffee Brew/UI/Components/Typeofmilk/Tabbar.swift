@@ -16,7 +16,7 @@ struct Tabbar: View {
         TabView {
             Home()
                 .tabItem {
-                    Image("system-house")
+                    Image(systemName: "house")
                 }
             Cart()
                 .tabItem {
@@ -24,7 +24,7 @@ struct Tabbar: View {
                 }
             Navigate()
                 .tabItem {
-                    Image("system-heartt")
+                    Image(systemName: "heart")
                 }
             Navigate()
                 .tabItem {
