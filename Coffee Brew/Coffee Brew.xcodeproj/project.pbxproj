@@ -10,6 +10,9 @@
 		E40710482A66D4CA007CC9F5 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40710472A66D4CA007CC9F5 /* Fonts.swift */; };
 		E4158EA92A6AEDC00061BC36 /* Navigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4158EA82A6AEDC00061BC36 /* Navigate.swift */; };
 		E4158EAB2A6AEE1B0061BC36 /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4158EAA2A6AEE1B0061BC36 /* Tabbar.swift */; };
+		E4158EAD2A6D9A360061BC36 /* Macha.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4158EAC2A6D9A360061BC36 /* Macha.swift */; };
+		E4158EAF2A6D9A7F0061BC36 /* Blueberry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4158EAE2A6D9A7F0061BC36 /* Blueberry.swift */; };
+		E4158EB12A6D9AA60061BC36 /* Cocoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4158EB02A6D9AA60061BC36 /* Cocoa.swift */; };
 		E4608CC32A6822BC0056CFBD /* BonaNova-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4608CC22A6822BC0056CFBD /* BonaNova-Italic.ttf */; };
 		E4608CC52A6824670056CFBD /* BonaNova-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4608CC42A6824670056CFBD /* BonaNova-Bold.ttf */; };
 		E4608CC72A6824700056CFBD /* BonaNova-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4608CC62A6824700056CFBD /* BonaNova-Regular.ttf */; };
@@ -26,9 +29,6 @@
 		E4941FC82A63151400AAA6A4 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4941FC72A63151400AAA6A4 /* Home.swift */; };
 		E4941FCA2A63152C00AAA6A4 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4941FC92A63152C00AAA6A4 /* Cart.swift */; };
 		E4941FCC2A63153800AAA6A4 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4941FCB2A63153800AAA6A4 /* Description.swift */; };
-		E4941FCE2A641C3C00AAA6A4 /* OatMilkCm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4941FCD2A641C3C00AAA6A4 /* OatMilkCm.swift */; };
-		E4941FD02A64337B00AAA6A4 /* SoyMilkCm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4941FCF2A64337B00AAA6A4 /* SoyMilkCm.swift */; };
-		E4941FD22A6433C900AAA6A4 /* AlmondMilkCm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4941FD12A6433C900AAA6A4 /* AlmondMilkCm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +36,9 @@
 		E407104B2A66D68A007CC9F5 /* Coffee-Brew-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Coffee-Brew-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E4158EA82A6AEDC00061BC36 /* Navigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigate.swift; sourceTree = "<group>"; };
 		E4158EAA2A6AEE1B0061BC36 /* Tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar.swift; sourceTree = "<group>"; };
+		E4158EAC2A6D9A360061BC36 /* Macha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macha.swift; sourceTree = "<group>"; };
+		E4158EAE2A6D9A7F0061BC36 /* Blueberry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blueberry.swift; sourceTree = "<group>"; };
+		E4158EB02A6D9AA60061BC36 /* Cocoa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cocoa.swift; sourceTree = "<group>"; };
 		E4608CC22A6822BC0056CFBD /* BonaNova-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BonaNova-Italic.ttf"; sourceTree = "<group>"; };
 		E4608CC42A6824670056CFBD /* BonaNova-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BonaNova-Bold.ttf"; sourceTree = "<group>"; };
 		E4608CC62A6824700056CFBD /* BonaNova-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BonaNova-Regular.ttf"; sourceTree = "<group>"; };
@@ -54,9 +57,6 @@
 		E4941FC72A63151400AAA6A4 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		E4941FC92A63152C00AAA6A4 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		E4941FCB2A63153800AAA6A4 /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
-		E4941FCD2A641C3C00AAA6A4 /* OatMilkCm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OatMilkCm.swift; sourceTree = "<group>"; };
-		E4941FCF2A64337B00AAA6A4 /* SoyMilkCm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyMilkCm.swift; sourceTree = "<group>"; };
-		E4941FD12A6433C900AAA6A4 /* AlmondMilkCm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlmondMilkCm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +70,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E4158EB22A6D9AE00061BC36 /* Carts */ = {
+			isa = PBXGroup;
+			children = (
+				E4158EAC2A6D9A360061BC36 /* Macha.swift */,
+				E4158EAE2A6D9A7F0061BC36 /* Blueberry.swift */,
+				E4158EB02A6D9AA60061BC36 /* Cocoa.swift */,
+			);
+			path = Carts;
+			sourceTree = "<group>";
+		};
 		E4941F902A630BC700AAA6A4 = {
 			isa = PBXGroup;
 			children = (
@@ -180,21 +190,19 @@
 		E4941FC62A6314B200AAA6A4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				E4941FD32A64345400AAA6A4 /* Typeofmilk */,
+				E4158EB22A6D9AE00061BC36 /* Carts */,
+				E4941FD32A64345400AAA6A4 /* Navigation */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		E4941FD32A64345400AAA6A4 /* Typeofmilk */ = {
+		E4941FD32A64345400AAA6A4 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
 				E4158EA82A6AEDC00061BC36 /* Navigate.swift */,
 				E4158EAA2A6AEE1B0061BC36 /* Tabbar.swift */,
-				E4941FCD2A641C3C00AAA6A4 /* OatMilkCm.swift */,
-				E4941FCF2A64337B00AAA6A4 /* SoyMilkCm.swift */,
-				E4941FD12A6433C900AAA6A4 /* AlmondMilkCm.swift */,
 			);
-			path = Typeofmilk;
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,13 +280,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4941FCE2A641C3C00AAA6A4 /* OatMilkCm.swift in Sources */,
+				E4158EAD2A6D9A360061BC36 /* Macha.swift in Sources */,
 				E4941FAD2A630FCB00AAA6A4 /* Resources.swift in Sources */,
 				E40710482A66D4CA007CC9F5 /* Fonts.swift in Sources */,
 				E4941FAF2A63100900AAA6A4 /* Color.swift in Sources */,
 				E4941FBD2A63112100AAA6A4 /* AssetConvertable.swift in Sources */,
-				E4941FD22A6433C900AAA6A4 /* AlmondMilkCm.swift in Sources */,
+				E4158EAF2A6D9A7F0061BC36 /* Blueberry.swift in Sources */,
 				E4158EAB2A6AEE1B0061BC36 /* Tabbar.swift in Sources */,
+				E4158EB12A6D9AA60061BC36 /* Cocoa.swift in Sources */,
 				E4941F9F2A630BC700AAA6A4 /* ContentView.swift in Sources */,
 				E4941FC12A63113E00AAA6A4 /* ColorAsset.swift in Sources */,
 				E4941F9D2A630BC700AAA6A4 /* Coffee_BrewApp.swift in Sources */,
@@ -286,7 +295,6 @@
 				E4158EA92A6AEDC00061BC36 /* Navigate.swift in Sources */,
 				E4941FC82A63151400AAA6A4 /* Home.swift in Sources */,
 				E4941FCA2A63152C00AAA6A4 /* Cart.swift in Sources */,
-				E4941FD02A64337B00AAA6A4 /* SoyMilkCm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
