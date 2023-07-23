@@ -53,6 +53,17 @@ struct Home: View {
                         .padding(.horizontal, 5)
                         
                         //
+                        ZStack {
+                                Rectangle()
+                                    .frame(width: 50, height: 600)
+                                    .foregroundColor(Color(toElement: .couponcode))
+                                
+                                Text("Cappuccino").rotationEffect(.degrees(-90))
+                                Text("Latte").rotationEffect(.degrees(-90))
+                                Text("Americano").rotationEffect(.degrees(-90))
+                                Text("Espresso").rotationEffect(.degrees(-90))
+                                Text("Flat White").rotationEffect(.degrees(-90))
+                        }
                     }
                 }
             }
