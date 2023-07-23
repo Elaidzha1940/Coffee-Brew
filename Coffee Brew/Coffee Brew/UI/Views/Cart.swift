@@ -257,7 +257,7 @@ struct Cart: View {
                         Button {
                             //action
                         } label: {
-                            Text("BUY NOW")
+                            Text("PAY NOW")
                                 .frame(width: 410, height: 50)
                                 .foregroundColor(Color(toText: .main))
                                 .background(Color(toElement: .mainbright))
@@ -266,9 +266,9 @@ struct Cart: View {
                         
                         //MARK: Tabbar
                     }
-                    .padding(.bottom, 30)
+                    .padding(.bottom, 20)
                 }
-                .padding(.bottom, 30)
+                .padding(.bottom, 20)
             }
         }
         .ignoresSafeArea()

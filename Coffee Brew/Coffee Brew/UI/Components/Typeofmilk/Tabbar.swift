@@ -22,7 +22,7 @@ struct Tabbar: View {
                 .tabItem {
                     Image("system-basket")
                 }
-            Description()
+            Navigate()
                 .tabItem {
                     Image("system-heartt")
                 }
@@ -31,7 +31,7 @@ struct Tabbar: View {
                     Image("system-bell")
                 }
         }
-        .background(Color.red)
+        .accentColor(.blue)
         .preferredColorScheme(.dark)
     }
 }
