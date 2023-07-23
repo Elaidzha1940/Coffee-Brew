@@ -54,15 +54,27 @@ struct Home: View {
                         
                         //
                         ZStack {
-                                Rectangle()
-                                    .frame(width: 50, height: 600)
-                                    .foregroundColor(Color(toElement: .couponcode))
-                                
+                            Rectangle()
+                                .frame(width: 50, height: 600)
+                                .foregroundColor(Color(toElement: .couponcode))
+                            
+                            VStack(spacing: 70) {
                                 Text("Cappuccino").rotationEffect(.degrees(-90))
+                                    .font(.custom(Fonts.BonaNova.regular, size: 18))
+                                    .foregroundColor(Color(toText: .searchtx))
                                 Text("Latte").rotationEffect(.degrees(-90))
+                                    .font(.custom(Fonts.BonaNova.regular, size: 18))
+                                    .foregroundColor(Color(toText: .searchtx))
                                 Text("Americano").rotationEffect(.degrees(-90))
+                                    .font(.custom(Fonts.BonaNova.regular, size: 18))
+                                    .foregroundColor(Color(toText: .searchtx))
                                 Text("Espresso").rotationEffect(.degrees(-90))
-                                Text("Flat White").rotationEffect(.degrees(-90))
+                                    .font(.custom(Fonts.BonaNova.regular, size: 18))
+                                    .foregroundColor(Color(toText: .searchtx))
+                                Text("Flat  White").rotationEffect(.degrees(-90))
+                                    .font(.custom(Fonts.BonaNova.regular, size: 18))
+                                    .foregroundColor(Color(toText: .searchtx))
+                            }
                         }
                     }
                 }
