@@ -10,6 +10,9 @@
 import SwiftUI
 
 struct Cart: View {
+    
+    @State var showSheet: Bool = false
+
     var body: some View {
         
         VStack {
@@ -172,11 +175,11 @@ struct Cart: View {
                             .foregroundColor(Color(toElement: .backgrey))
                             .padding(4)
                         
-                        //MARK: CouponCode
+                        //MARK: CouponCode / Sheet
                         HStack {
                             
                             Button {
-                                //action
+                                showSheet.toggle()
                             } label: {
                                 ZStack {
                                     
@@ -199,7 +202,11 @@ struct Cart: View {
                                     }
                                 }
                             }
+                            .sheet(isPresented: $showSheet, content: {
+                                Image("system-qrcode")
+                            })
                         }
+                        
                         VStack(alignment: .leading, spacing: 4) {
                             
                             HStack {
