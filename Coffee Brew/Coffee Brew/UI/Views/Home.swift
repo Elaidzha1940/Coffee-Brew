@@ -59,6 +59,23 @@ struct Home: View {
                     }
                     .padding(.bottom)
                     .padding(.bottom, 30)
+                    
+                    //
+                    VStack(alignment: .center, spacing: 20) {
+                        
+                        HStack)sp {
+                            SmallCarts()
+                            SmallCarts()
+                        }
+                        
+                        HStack(spacing: 20) {
+                            
+                            SmallCarts()
+                            SmallCarts()
+                            
+                        }
+                    }
+                    .offset(x: 25, y: 80)
                 }
             }
         }
