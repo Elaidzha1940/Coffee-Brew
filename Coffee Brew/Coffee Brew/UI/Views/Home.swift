@@ -63,7 +63,7 @@ struct Home: View {
                     //
                     VStack(alignment: .center, spacing: 20) {
                         
-                        HStack)sp {
+                        HStack(spacing: 20){
                             SmallCarts()
                             SmallCarts()
                         }
