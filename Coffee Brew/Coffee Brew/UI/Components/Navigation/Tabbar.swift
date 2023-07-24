@@ -31,6 +31,7 @@ struct Tabbar: View {
                     Image(systemName: "bell.fill")
                 }
         }
+        .foregroundColor(.white)
         .accentColor(Color(toElement: .mainbright))
         .preferredColorScheme(.dark)
     }

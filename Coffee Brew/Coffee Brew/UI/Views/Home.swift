@@ -53,32 +53,9 @@ struct Home: View {
                         .padding(.horizontal, 5)
                         
                         //
-                        ZStack {
-                            Rectangle()
-                                .frame(width: 50, height: 550, alignment: .leading)
-                                .foregroundColor(Color(toElement: .couponcode))
-                            
-                            VStack(spacing: 70) {
-                                Text("Cappuccino").rotationEffect(.degrees(-90))
-                                    .font(.custom(Fonts.BonaNova.regular, size: 18))
-                                    .foregroundColor(Color(toText: .searchtx))
-                                Text("Latte").rotationEffect(.degrees(-90))
-                                    .font(.custom(Fonts.BonaNova.regular, size: 18))
-                                    .foregroundColor(Color(toText: .searchtx))
-                                Text("Americano").rotationEffect(.degrees(-90))
-                                    .font(.custom(Fonts.BonaNova.regular, size: 18))
-                                    .foregroundColor(Color(toText: .searchtx))
-                                Text("Espresso").rotationEffect(.degrees(-90))
-                                    .font(.custom(Fonts.BonaNova.regular, size: 18))
-                                    .foregroundColor(Color(toText: .searchtx))
-                                Text("Flat  White").rotationEffect(.degrees(-90))
-                                    .font(.custom(Fonts.BonaNova.regular, size: 18))
-                                    .foregroundColor(Color(toText: .searchtx))
-                            }
-                            .edgesIgnoringSafeArea(.leading)
-                            .padding(.horizontal, -20)
-
-                        }
+                      MatchedGeometryEffectexample()
+                            .offset(x: -10)
+                        
                     }
                     .padding(.bottom)
                     .padding(.bottom, 30)

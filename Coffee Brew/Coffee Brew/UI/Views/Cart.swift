@@ -30,6 +30,14 @@ struct Cart: View {
                         //MARK: Carts
                         
                         Macha()
+                            .swipeActions {
+                                Button {
+                                    print("Delete")
+                                } label: {
+                                    Label("Delete", systemImage: "trash.fill")
+                                }
+                            }
+                        
                         Blueberry()
                         Cocoa()
                         
