@@ -12,7 +12,7 @@ import SwiftUI
 struct SmallCarts: View {
     var body: some View {
 
-        VStack(alignment: .leading) {
+         VStack(alignment: .leading) {
 
             ZStack {
                 Image("system-cocoa")
