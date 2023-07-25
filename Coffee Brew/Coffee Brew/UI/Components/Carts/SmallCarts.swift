@@ -12,7 +12,7 @@ import SwiftUI
 struct SmallCarts: View {
     var body: some View {
 
-        Smallcart()
+        Smallcart(image: Image("system-cocoa"))
     }
 }
 
@@ -23,12 +23,16 @@ struct SmallCarts_Previews: PreviewProvider {
 }
 
 struct Smallcart: View {
+    
+    let image: Image
+    
     var body: some View {
         
         VStack(alignment: .leading) {
 
            ZStack {
-               Image("system-cocoa")
+               image
+               //Image("system-cocoa")
                    .resizable()
                    .frame(width: 130, height: 130)
                    .cornerRadius(10)

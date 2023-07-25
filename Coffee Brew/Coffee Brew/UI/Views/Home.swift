@@ -61,21 +61,31 @@ struct Home: View {
                     .padding(.bottom, 30)
                     
                     //
-                    VStack(alignment: .center, spacing: 20) {
-                        
-                        HStack(spacing: 20){
-                            SmallCarts()
-                            SmallCarts()
-                        }
-                        
-                        HStack(spacing: 20) {
-                            
-                            SmallCarts()
-                            SmallCarts()
-                            
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(alignment: .center, spacing: 20) {
+                                ForEach(0 ..< 4) { item in
+                                
+//                                //HStack(spacing: 20){
+//        //                            SmallCarts()
+//        //                            SmallCarts()
+                                    Smallcart(image: Image("system-cocoa"))
+//
+//                                }
+//
+//                                HStack(spacing: 20) {
+//
+//        //                            SmallCarts()
+//        //                            SmallCarts()
+//                                    Smallcart(image: Image("system-cocoa"))
+//
+//
+//                                }
+                            }
+                                .padding(.trailing, -5)
+                            //.offset(x: 25, y: 80)
                         }
                     }
-                    .offset(x: 25, y: 80)
+                    .padding(.horizontal, 30)
                 }
             }
         }
