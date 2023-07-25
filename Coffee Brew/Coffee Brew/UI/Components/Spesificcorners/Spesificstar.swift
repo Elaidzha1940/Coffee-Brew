@@ -15,7 +15,7 @@ struct Spesificstar: View {
         ZStack {
             Rectangle()
                 .frame(width: 70, height: 35, alignment: .center)
-                .foregroundColor(Color(toElement: .couponcode).opacity(0.2))
+                .foregroundColor(Color(toElement: .couponcode).opacity(0.5))
             
             HStack {
                 Image("system-star")

@@ -14,10 +14,15 @@ struct SmallCarts: View {
 
         VStack(alignment: .leading) {
 
-            Image("system-cocoa")
-                .resizable()
-                .frame(width: 130, height: 130)
-                .cornerRadius(10)
+            ZStack {
+                Image("system-cocoa")
+                    .resizable()
+                    .frame(width: 130, height: 130)
+                    .cornerRadius(10)
+                
+                Spesificstar()
+                    .offset(x: -30, y: -50)
+            }
             
             Text("Cinnamon & Cocoa")
                 .font(.custom(Fonts.BonaNova.regular, size: 18))
