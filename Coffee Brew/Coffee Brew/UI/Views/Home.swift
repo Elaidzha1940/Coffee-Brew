@@ -34,7 +34,6 @@ struct Home: View {
                             Image("system-man")
                         }
                         .padding()
-                        //.padding(.top, 10)
                         
                         //MARK: SearchBar
                         HStack {
@@ -71,15 +70,16 @@ struct Home: View {
                                             Smallcart(image: Image("system-cocoa"))
                                         }
                                     }
+                                    .padding(.top)
                                 }
                             }
                         }
-                        .padding(.top, 25)
+                        .padding(.top, 30)
                     }
                     .frame(width: 350, height: 620)
                     .padding(.leading, 50)
-                    .padding(.top, 25)
-                    .offset(y: 70)
+                    .padding(.top, 30)
+                    .offset(y: 80)
                     
                 }
             }
