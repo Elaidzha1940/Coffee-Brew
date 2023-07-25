@@ -59,33 +59,36 @@ struct Home: View {
                     }
                     .padding(.bottom)
                     .padding(.bottom, 30)
-                    
+                    //
+//                    ScrollView {
+//                        VStack {
+//                            ForEach(0..<100) {index in
+//                                ScrollView(.horizontal, showsIndicators: false,
+//                                           content: {
+//                                    HStack {
+//                                        ForEach(0..<200) {index in
+//                                            RoundedRectangle(cornerRadius: 20.5)
+//                                                .fill(Color.white)
+//                                                .frame(width: 200, height: 150)
+//                                                .shadow(radius: 10)
+//                                                .padding()
+//                                        }
+//                                    }
+//                                })
+//                            }
+//                        }
+//                    }
                     //
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack(spacing: 15) {
                                 ForEach(0 ..< 4) { item in
                                 
-//                                //HStack(spacing: 20){
-//        //                            SmallCarts()
-//        //                            SmallCarts()
                                     Smallcart(image: Image("system-macha"))
                                     Smallcart(image: Image("system-caramel"))
                                     Smallcart(image: Image("system-blueberry"))
                                     Smallcart(image: Image("system-cocoa"))
-//
-//                                }
-//
-//                                HStack(spacing: 20) {
-//
-//        //                            SmallCarts()
-//        //                            SmallCarts()
-//                                    Smallcart(image: Image("system-cocoa"))
-//
-//
-//                                }
+
                             }
-                                //.padding(.trailing, -5)
-                            //.offset(x: 25, y: 80)
                         }
                     }
                     .padding(.bottom, 40)
