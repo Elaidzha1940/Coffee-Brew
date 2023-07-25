@@ -1,9 +1,11 @@
+//  /*
 //
-//  MatchedG.swift
-//  Coffee Brew
+//  Project: Coffee Brew
+//  File: MatchedG.swift
+//  Created by: Elaidzha Shchukin
+//  Date: 24.07.2023
 //
-//  Created by Elaidzha Shchukin on 24.07.2023.
-//
+//   */
 
 import SwiftUI
 

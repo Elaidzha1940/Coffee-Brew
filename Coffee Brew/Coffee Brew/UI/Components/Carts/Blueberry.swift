@@ -1,9 +1,11 @@
+//  /*
 //
+//  Project: Coffee Brew
 //  Blueberry.swift
-//  Coffee Brew
+//  Created by: Elaidzha Shchukin
+//  Date: 23.07.2023
 //
-//  Created by Elaidzha Shchukin on 23.07.2023.
-//
+//  */
 
 import SwiftUI
 

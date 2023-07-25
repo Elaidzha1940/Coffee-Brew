@@ -1,9 +1,11 @@
+//  /*
 //
-//  SmallCarts.swift
-//  Coffee Brew
+//  Project: Coffee Brew
+//  File: SmallCarts.swift
+//  Created by: Elaidzha Shchukin
+//  Date: 24.07.2023
 //
-//  Created by Elaidzha Shchukin on 24.07.2023.
-//
+//  */
 
 import SwiftUI
 
@@ -34,8 +36,9 @@ struct SmallCarts: View {
                
                 Button(action: {}) {
                     Image("system-plus")
-                        .resizable()
                         .frame(width: 40, height: 40)
+                        .background(Color(toElement: .mainbright))
+                        .cornerRadius(10)
                 }
             }
             .background(Color(toElement: .backgrey))

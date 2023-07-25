@@ -1,9 +1,11 @@
+//  /*
 //
-//  Cocoa.swift
-//  Coffee Brew
+//  Project: Coffee Brew
+//  File: Cocoa.swift
+//  Created by: Elaidzha Shchukin
+//  Date: on 23.07.2023.
 //
-//  Created by Elaidzha Shchukin on 23.07.2023.
-//
+//  */
 
 import SwiftUI
 
