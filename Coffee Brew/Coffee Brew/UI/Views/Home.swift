@@ -44,7 +44,6 @@ struct Home: View {
                                 TextField("Browse your favorite coffee...", text: $search)
                                     .foregroundColor(.white)
                             }
-                            .padding(.bottom)
                         }
                         .padding()
                         .foregroundColor(Color(toText: .searchtx))
@@ -57,8 +56,6 @@ struct Home: View {
                             .offset(x: -10)
                         
                     }
-                   // .padding(.bottom)
-                    //.padding(.bottom, 30)
                     //
                     ScrollView {
                         VStack(spacing: 15) {
@@ -77,11 +74,11 @@ struct Home: View {
                                 }
                             }
                         }
-                        .padding(.top, 20)
+                        .padding(.top, 25)
                     }
                     .frame(width: 350, height: 620)
                     .padding(.leading, 50)
-                    .padding(.top, 20)
+                    .padding(.top, 25)
                     .offset(y: 70)
                     
                 }
