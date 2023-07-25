@@ -14,8 +14,8 @@ struct Spesificstar: View {
         
         ZStack {
             Rectangle()
-                .frame(width: 70, height: 35, alignment: .center)
-                .foregroundColor(Color(toElement: .couponcode).opacity(0.5))
+                .frame(width: 50, height: 28, alignment: .center)
+                .foregroundColor(Color(toElement: .backgrey).opacity(0.9))
             
             HStack {
                 Image("system-star")
@@ -25,8 +25,8 @@ struct Spesificstar: View {
                     .foregroundColor(.white)
             }
         }
-        .cornerRadius(50, corners: .topLeft)
-        .cornerRadius(50, corners: .bottomRight)
+        .cornerRadius(20, corners: .topLeft)
+        .cornerRadius(20, corners: .bottomRight)
     }
 }
 

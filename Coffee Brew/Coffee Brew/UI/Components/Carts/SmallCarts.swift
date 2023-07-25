@@ -21,7 +21,7 @@ struct SmallCarts: View {
                     .cornerRadius(10)
                 
                 Spesificstar()
-                    .offset(x: -30, y: -50)
+                    .offset(x: -40, y: -52)
             }
             
             Text("Cinnamon & Cocoa")
