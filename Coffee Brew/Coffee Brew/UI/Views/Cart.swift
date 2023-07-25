@@ -80,6 +80,8 @@ struct Cart: View {
                             }
                             .sheet(isPresented: $showSheet, content: {
                                 Image("system-qrcode")
+                                    .resizable()
+                                    .scaledToFit()
                             })
                         }
                         
