@@ -33,7 +33,7 @@ struct MatchedGeometryEffectexample: View {
         
         ZStack {
             Rectangle()
-                .frame(width: 50, height: 550, alignment: .leading)
+                .frame(width: 50, height: 600, alignment: .leading)
                 .foregroundColor(Color(toElement: .couponcode))
             VStack(spacing: 70) {
                 

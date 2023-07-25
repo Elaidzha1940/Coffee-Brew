@@ -53,7 +53,7 @@ struct Home: View {
                         .padding(.horizontal, 5)
                         
                         //
-                      MatchedGeometryEffectexample()
+                        MatchedGeometryEffectexample()
                             .offset(x: -10)
                         
                     }
@@ -66,46 +66,24 @@ struct Home: View {
                                 
                                 ScrollView(.horizontal, showsIndicators: false) {
                                     HStack(spacing: 15) {
-
+                                        
                                         ForEach(0 ..< 4) { item in
                                             Smallcart(image: Image("system-macha"))
                                             Smallcart(image: Image("system-caramel"))
                                             Smallcart(image: Image("system-blueberry"))
                                             Smallcart(image: Image("system-cocoa"))
-                                    }
-//                                        ForEach(0..<200) {index in
-//                                            RoundedRectangle(cornerRadius: 20.5)
-//                                                .fill(Color.white)
-//                                                .frame(width: 200, height: 150)
-//                                                .shadow(radius: 10)
-//                                                .padding()
-//                                        }
+                                        }
                                     }
                                 }
                             }
                         }
-                        .padding(.top, 25)
+                        .padding(.top, 10)
                     }
                     .frame(width: 350, height: 620)
                     .padding(.leading, 50)
-                    .padding(.top, 30)
+                    .padding(.top, 20)
                     .offset(y: 70)
                     
-                    
-//                    ScrollView(.horizontal, showsIndicators: false) {
-//                        HStack(spacing: 15) {
-//                                ForEach(0 ..< 4) { item in
-//
-//                                    Smallcart(image: Image("system-macha"))
-//                                    Smallcart(image: Image("system-caramel"))
-//                                    Smallcart(image: Image("system-blueberry"))
-//                                    Smallcart(image: Image("system-cocoa"))
-//
-//                            }
-//                        }
-//                    }
-//                    .padding(.bottom, 40)
-//                    .padding(.leading, 50)
                 }
             }
         }
