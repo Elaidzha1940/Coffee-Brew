@@ -16,7 +16,7 @@ enum Resources {}
 extension Resources {
     
     enum System: String, AssetConvertable {
-        case bigcoffee, heart, star, macha, blueberry, cocoa, plus, mines, next, man, search, house, basket, heartt, bell, qrcode
+        case bigcoffee, heart, star, macha, blueberry, cocoa, plus, mines, next, man, search, house, basket, heartt, bell, qrcode, caramel
         
     }
     

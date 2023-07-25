@@ -62,12 +62,15 @@ struct Home: View {
                     
                     //
                     ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(alignment: .center, spacing: 20) {
+                        HStack(spacing: 15) {
                                 ForEach(0 ..< 4) { item in
                                 
 //                                //HStack(spacing: 20){
 //        //                            SmallCarts()
 //        //                            SmallCarts()
+                                    Smallcart(image: Image("system-macha"))
+                                    Smallcart(image: Image("system-caramel"))
+                                    Smallcart(image: Image("system-blueberry"))
                                     Smallcart(image: Image("system-cocoa"))
 //
 //                                }
@@ -81,11 +84,12 @@ struct Home: View {
 //
 //                                }
                             }
-                                .padding(.trailing, -5)
+                                //.padding(.trailing, -5)
                             //.offset(x: 25, y: 80)
                         }
                     }
-                    .padding(.horizontal, 30)
+                    .padding(.bottom, 40)
+                    .padding(.leading, 50)
                 }
             }
         }
