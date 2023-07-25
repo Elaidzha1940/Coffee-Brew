@@ -70,7 +70,6 @@ struct Home: View {
                                             Smallcart(image: Image("system-cocoa"))
                                         }
                                     }
-                                    .padding(.top)
                                 }
                             }
                         }
