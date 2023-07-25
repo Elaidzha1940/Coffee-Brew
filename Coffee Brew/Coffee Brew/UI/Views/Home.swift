@@ -15,27 +15,26 @@ struct Home: View {
     var body: some View {
         
         VStack {
-            
             VStack {
                 ZStack {
                     Color(toElement: .main)
                     
                     VStack(alignment: .leading) {
-                        
                         HStack(alignment: .center) {
                             VStack(alignment: .leading, spacing: -10) {
                                 Text("deja")
                                     .font(.custom(Fonts.BonaNova.italic, size: 40))
                                     .foregroundColor(Color(toText: .deja))
-                                
                                 Text("Brew")
                                     .font(.custom(Fonts.BonaNova.regular, size: 50))
                                     .foregroundColor(Color(toText: .brew))
+                                
                             }
                             Spacer()
                             Image("system-man")
                         }
                         .padding()
+                        //.padding(.top, 10)
                         
                         //MARK: SearchBar
                         HStack {
@@ -45,6 +44,7 @@ struct Home: View {
                                 TextField("Browse your favorite coffee...", text: $search)
                                     .foregroundColor(.white)
                             }
+                            .padding(.bottom)
                         }
                         .padding()
                         .foregroundColor(Color(toText: .searchtx))
@@ -57,8 +57,8 @@ struct Home: View {
                             .offset(x: -10)
                         
                     }
-                    .padding(.bottom)
-                    .padding(.bottom, 30)
+                   // .padding(.bottom)
+                    //.padding(.bottom, 30)
                     //
                     ScrollView {
                         VStack(spacing: 15) {
@@ -77,7 +77,7 @@ struct Home: View {
                                 }
                             }
                         }
-                        .padding(.top, 10)
+                        .padding(.top, 20)
                     }
                     .frame(width: 350, height: 620)
                     .padding(.leading, 50)
