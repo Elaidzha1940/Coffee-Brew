@@ -53,6 +53,9 @@ struct Cocoa: View {
                     
                     Button(action: {}) {
                         Image("system-plus")
+                            .frame(width: 30, height: 30)
+                            .background(Color(toElement: .mainbright))
+                            .cornerRadius(10)
                     }
                 }
                 .background(Color(toElement: .backgrey))
