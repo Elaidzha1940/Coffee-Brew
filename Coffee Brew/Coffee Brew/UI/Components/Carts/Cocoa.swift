@@ -44,7 +44,9 @@ struct Cocoa: View {
                 HStack {
                     Button(action: {}) {
                         Image("system-mines")
-                    }
+                            .frame(width: 30, height: 30)
+                            .background(Color(toElement: .mainbright))
+                            .cornerRadius(10)                    }
                     
                     Text("1")
                         .font(.custom(Fonts.BonaNova.regular, size: 25))
@@ -59,6 +61,7 @@ struct Cocoa: View {
                     }
                 }
                 .background(Color(toElement: .backgrey))
+                .cornerRadius(10)
             }
             .padding(.horizontal, 20)
         }
