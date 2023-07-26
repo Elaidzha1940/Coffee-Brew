@@ -5,6 +5,8 @@
 //  Created by: Elaidzha Shchukin
 //  Date: 24.07.2023
 //
+//  Status: #In progress | #Decorated
+//
 //  */
 
 import SwiftUI
