@@ -14,7 +14,8 @@ import SwiftUI
 struct Home: View {
     
     @State private var search: String = ""
-
+    @State var showSheet1: Bool = false
+    
     var body: some View {
         
         VStack {
@@ -65,11 +66,19 @@ struct Home: View {
                                 ScrollView(.horizontal, showsIndicators: false) {
                                     HStack(spacing: 15) {
                                         ForEach(0 ..< 4) { item in
-                                            
-                                                Smallcart(image: Image("system-macha"))
+                                            Button {
+                                                showSheet1.toggle()
+                                            } label: {
                                                 Smallcart(image: Image("system-caramel"))
-                                                Smallcart(image: Image("system-blueberry"))
-                                                Smallcart(image: Image("system-cocoa"))
+                                            }
+                                            .sheet(isPresented: $showSheet1, content: {
+                                                Description()
+                                            })
+                                            
+                                            Smallcart(image: Image("system-macha"))
+                                            Smallcart(image: Image("system-caramel"))
+                                            Smallcart(image: Image("system-blueberry"))
+                                            Smallcart(image: Image("system-cocoa"))
                                         }
                                     }
                                 }
