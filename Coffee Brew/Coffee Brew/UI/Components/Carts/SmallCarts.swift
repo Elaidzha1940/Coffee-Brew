@@ -15,6 +15,11 @@ struct SmallCarts: View {
     var body: some View {
 
         Smallcart(image: Image("system-cocoa"))
+        Button {
+            showSheet1.toggle()
+        } label: {
+            Smallcart(image: Image("system-macha"))
+        }
     }
 }
 

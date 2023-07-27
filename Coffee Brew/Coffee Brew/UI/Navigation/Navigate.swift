@@ -10,9 +10,12 @@
 import SwiftUI
 
 struct Navigate: View {
+    
+    @State var showSheet1: Bool = false
+    
     var body: some View {
         
-        Text("Navigaete!")
+        Text("hi")
     }
 }
 

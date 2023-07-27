@@ -16,11 +16,11 @@ struct ContentView: View {
         
         NavigationView {
             VStack {
-                
-                NavigationLink(destination: Description())
-                {
-                    Smallcart(image: Image("system-macha"))
-                }
+                Text("Hi")
+//                NavigationLink(destination: Description())
+//                {
+//                    Smallcart(image: Image("system-macha"))
+//                }
             }
         }
     }
