@@ -61,15 +61,17 @@ struct Home: View {
                     ScrollView {
                         VStack(spacing: 15) {
                             ForEach(0 ..< 4) { item in
-                                
                                 ScrollView(.horizontal, showsIndicators: false) {
                                     HStack(spacing: 15) {
-                                        
                                         ForEach(0 ..< 4) { item in
-                                            Smallcart(image: Image("system-macha"))
-                                            Smallcart(image: Image("system-caramel"))
-                                            Smallcart(image: Image("system-blueberry"))
-                                            Smallcart(image: Image("system-cocoa"))
+                                            NavigationLink(destination: Description())
+                                            {
+                                                Smallcart(image: Image("system-macha"))
+                                            }
+                                            //Smallcart(image: Image("system-macha"))
+//                                            Smallcart(image: Image("system-caramel"))
+//                                            Smallcart(image: Image("system-blueberry"))
+//                                            Smallcart(image: Image("system-cocoa"))
                                         }
                                     }
                                 }

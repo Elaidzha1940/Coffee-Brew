@@ -14,12 +14,15 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        VStack {
-        
-            Image(systemName: "coffeebrew")
-        
+        NavigationView {
+            VStack {
+                
+                NavigationLink(destination: Description())
+                {
+                    Smallcart(image: Image("system-macha"))
+                }
+            }
         }
-        .padding()
     }
 }
 
