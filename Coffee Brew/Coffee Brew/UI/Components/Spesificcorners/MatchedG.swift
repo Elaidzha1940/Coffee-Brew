@@ -15,7 +15,6 @@ struct MatchedG: View {
     var body: some View {
         
         MatchedGeometryEffectexample()
-        
     }
 }
 
@@ -62,7 +61,6 @@ struct MatchedGeometryEffectexample: View {
         .cornerRadius(50, corners: .topRight)
     }
 }
-
 
 struct RoundedCorner: Shape {
     

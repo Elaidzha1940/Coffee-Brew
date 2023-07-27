@@ -13,7 +13,7 @@ import SwiftUI
 
 struct Cocoa: View {
     var body: some View {
-
+        
         ZStack {
             Rectangle()
                 .frame(width: 410, height: 110)
@@ -40,7 +40,6 @@ struct Cocoa: View {
                             .foregroundColor(.white)
                     }
                 }
-                
                 Spacer()
                 
                 HStack {
@@ -48,7 +47,7 @@ struct Cocoa: View {
                         Image("system-mines")
                             .frame(width: 30, height: 30)
                             .background(Color(toElement: .mainbright))
-                            .cornerRadius(10)                    }
+                        .cornerRadius(10)                    }
                     
                     Text("1")
                         .font(.custom(Fonts.BonaNova.regular, size: 25))

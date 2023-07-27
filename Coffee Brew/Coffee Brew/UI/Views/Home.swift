@@ -54,12 +54,11 @@ struct Home: View {
                         .cornerRadius(12)
                         .padding(.horizontal, 5)
                         
-                        //
                         MatchedGeometryEffectexample()
                             .offset(x: -10)
-                        
                     }
-                    //
+                    
+                    //MARK: MultiScrollView
                     ScrollView {
                         VStack(spacing: 15) {
                             ForEach(0 ..< 4) { item in
@@ -90,7 +89,6 @@ struct Home: View {
                     .padding(.leading, 50)
                     .padding(.top, 30)
                     .offset(y: 80)
-                    
                 }
             }
         }

@@ -30,7 +30,6 @@ struct Cart: View {
                     VStack {
                         
                         //MARK: Carts
-                        
                         Macha()
                             .swipeActions {
                                 Button {
@@ -43,9 +42,7 @@ struct Cart: View {
                         Blueberry()
                         Cocoa()
                         
-                        
                         //MARK: LineShape
-                        
                         Line()
                             .stroke(style: StrokeStyle(lineWidth: 1, dash: [6]))
                             .frame(height: 1)
@@ -53,9 +50,7 @@ struct Cart: View {
                             .padding(4)
                         
                         //MARK: CouponCode / Sheet
-                        
                         HStack {
-                            
                             Button {
                                 showSheet.toggle()
                             } label: {
@@ -120,7 +115,6 @@ struct Cart: View {
                         .padding()
                         
                         //MARK: LineShape
-                        
                         Line()
                             .stroke(style: StrokeStyle(lineWidth: 1, dash: [6]))
                             .frame(height: 1)
@@ -151,8 +145,6 @@ struct Cart: View {
                                 .background(Color(toElement: .mainbright))
                                 .cornerRadius(10)
                         }
-                        
-                        //MARK: Tabbar
                     }
                     .padding(.bottom, 20)
                 }

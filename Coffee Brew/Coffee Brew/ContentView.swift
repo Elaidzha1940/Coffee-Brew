@@ -5,8 +5,6 @@
 //  Created by: Elaidzha Shchukin
 //  Date: 15.07.2023
 //
-//  
-//
 //  */
 
 import SwiftUI
@@ -14,14 +12,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        NavigationView {
-            VStack {
-                Text("Hi")
-//                NavigationLink(destination: Description())
-//                {
-//                    Smallcart(image: Image("system-macha"))
-//                }
-            }
+        VStack {
+            Text("Hi")
         }
     }
 }
